@@ -16,6 +16,9 @@
     <Compile Update="Cadastro_Tela_2_C.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="loginoficina.cs">
       <SubType>Form</SubType>
     </Compile>

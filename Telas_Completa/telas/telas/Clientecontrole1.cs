@@ -20,11 +20,11 @@ namespace telas
 
 
                 //monta o script sql de cadastrar as informações no banco
-                string sql = "insert into cliente (nome,email,telefone)values(@nome,@email,@telefone)";
+                string sql = "insert into cliente (nome,email,telefone, senha )values(@nome,@email,@telefone, @senha)";
                 //monto o vetor de atributos da tabela usuario
-                string[] campos = { "@nome", "@email", "@telefone"};
+                string[] campos = { "@nome", "@email", "@telefone","@senha"};
                 //monto o vetor com os valores do formulario
-                string[] valores = { usuario.nome, usuario.email, usuario.telefone };
+                string[] valores = { usuario.nome, usuario.email, usuario.telefone, usuario.senha };
                 //testar o insert no banco de dados
                 usuario.cod_usuario = con.cadastrar(0, campos, valores, sql);
                 if (usuario.cod_usuario >= 1)

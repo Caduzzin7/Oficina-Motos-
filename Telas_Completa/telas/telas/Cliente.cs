@@ -12,7 +12,7 @@ namespace telas
         public string nome;
         public string email;
         public string telefone;
-        
+        public string senha;        
         //construtor da classe usuario 
         public Cliente()
         {

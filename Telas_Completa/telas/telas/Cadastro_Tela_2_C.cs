@@ -48,9 +48,13 @@ namespace telas
                 }
                 else
                 {
+
                     MessageBox.Show("Erro no cadastrado do usuário!");
 
                 }
+
+                cliente.senha=txtsenha.Text;
+
             }
             catch (Exception ex)
             {
@@ -80,9 +84,9 @@ namespace telas
             {
                 //Codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
                 dt = conexao.obterdados("select * from cliente where Codcliente=" + codcliente);
-                txtnome.Text = dt.Rows[0][1].ToString();
+                txtnome.Text = dt.Rows[0][0].ToString();
                 txtemail.Text = dt.Rows[0][2].ToString();
-                txttelefone.Text = dt.Rows[0][3].ToString();
+                txttelefone.Text = dt.Rows[0][1].ToString();
             }
             else
             {
@@ -127,8 +131,8 @@ namespace telas
                 codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
                 dt = conexao.obterdados("select * from cliente where codcliente=" + codcliente);
                 txtnome.Text = dt.Rows[0][1].ToString();
-                txtemail.Text = dt.Rows[0][2].ToString();
-                txttelefone.Text = dt.Rows[0][3].ToString();
+                txtemail.Text = dt.Rows[0][3].ToString();
+                txttelefone.Text = dt.Rows[0][2].ToString();
             }
 
         }

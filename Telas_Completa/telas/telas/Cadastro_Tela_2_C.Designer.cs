@@ -45,8 +45,9 @@
             label6 = new Label();
             pesquisacliente = new ComboBox();
             label7 = new Label();
-            textBox2 = new TextBox();
+            txtsenha = new TextBox();
             label8 = new Label();
+            btnlogin = new Button();
             SuspendLayout();
             // 
             // label1
@@ -214,14 +215,13 @@
             label7.Text = "Cadastro rapido";
             label7.Click += button5_Click;
             // 
-            // textBox2
+            // txtsenha
             // 
-            textBox2.Enabled = false;
-            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            textBox2.Location = new Point(844, 125);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(102, 27);
-            textBox2.TabIndex = 20;
+            txtsenha.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txtsenha.Location = new Point(844, 125);
+            txtsenha.Name = "txtsenha";
+            txtsenha.Size = new Size(102, 27);
+            txtsenha.TabIndex = 20;
             // 
             // label8
             // 
@@ -234,13 +234,23 @@
             label8.TabIndex = 19;
             label8.Text = "Senha ";
             // 
+            // btnlogin
+            // 
+            btnlogin.Location = new Point(802, 191);
+            btnlogin.Name = "btnlogin";
+            btnlogin.Size = new Size(124, 40);
+            btnlogin.TabIndex = 21;
+            btnlogin.Text = "Login";
+            btnlogin.UseVisualStyleBackColor = true;
+            // 
             // Cadastro_Tela_2_C
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(986, 513);
-            Controls.Add(textBox2);
+            Controls.Add(btnlogin);
+            Controls.Add(txtsenha);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(pesquisacliente);
@@ -285,7 +295,8 @@
         private Label label6;
         private ComboBox pesquisacliente;
         private Label label7;
-        private TextBox textBox2;
+        private TextBox txtsenha;
         private Label label8;
+        private Button btnlogin;
     }
 }
