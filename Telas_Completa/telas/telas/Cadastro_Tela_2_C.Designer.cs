@@ -45,15 +45,17 @@
             label6 = new Label();
             pesquisacliente = new ComboBox();
             label7 = new Label();
+            textBox2 = new TextBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Sitka Banner", 22.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(304, 9);
+            label1.Font = new Font("Stencil", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(174, 22);
             label1.Name = "label1";
-            label1.Size = new Size(247, 53);
+            label1.Size = new Size(395, 47);
             label1.TabIndex = 0;
             label1.Text = "cadastro cliente ";
             label1.Click += label1_Click;
@@ -61,19 +63,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Sitka Small", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 10.2F);
             label2.Location = new Point(280, 74);
             label2.Name = "label2";
-            label2.Size = new Size(225, 21);
+            label2.Size = new Size(219, 20);
             label2.TabIndex = 1;
             label2.Text = "informações do proprietário:";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 10.2F);
             label3.Location = new Point(192, 125);
             label3.Name = "label3";
-            label3.Size = new Size(121, 20);
+            label3.Size = new Size(131, 20);
             label3.TabIndex = 2;
             label3.Text = "Nome completo:";
             // 
@@ -88,9 +91,10 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 10.2F);
             label4.Location = new Point(192, 164);
             label4.Name = "label4";
-            label4.Size = new Size(55, 20);
+            label4.Size = new Size(62, 20);
             label4.TabIndex = 4;
             label4.Text = "E-mail:";
             // 
@@ -105,9 +109,10 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 10.2F);
             label5.Location = new Point(192, 211);
             label5.Name = "label5";
-            label5.Size = new Size(148, 20);
+            label5.Size = new Size(164, 20);
             label5.TabIndex = 6;
             label5.Text = "Telefone do Contato:";
             label5.Click += label5_Click;
@@ -121,7 +126,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.OliveDrab;
+            button1.BackColor = Color.FloralWhite;
             button1.Location = new Point(482, 409);
             button1.Name = "button1";
             button1.Size = new Size(110, 29);
@@ -180,18 +185,20 @@
             // 
             label6.AutoSize = true;
             label6.Enabled = false;
+            label6.Font = new Font("Microsoft Sans Serif", 10.2F);
             label6.Location = new Point(192, 259);
             label6.Name = "label6";
-            label6.Size = new Size(108, 20);
+            label6.Size = new Size(118, 20);
             label6.TabIndex = 15;
             label6.Text = "Codigo Cliente";
             // 
             // pesquisacliente
             // 
             pesquisacliente.FormattingEnabled = true;
-            pesquisacliente.Location = new Point(601, 50);
+            pesquisacliente.Items.AddRange(new object[] { "0" });
+            pesquisacliente.Location = new Point(844, 74);
             pesquisacliente.Name = "pesquisacliente";
-            pesquisacliente.Size = new Size(151, 28);
+            pesquisacliente.Size = new Size(102, 28);
             pesquisacliente.TabIndex = 17;
             pesquisacliente.SelectedIndexChanged += pesquisacliente_SelectedIndexChanged;
             pesquisacliente.SelectionChangeCommitted += pesquisacliente_SelectionChangeCommitted;
@@ -199,19 +206,42 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(657, 27);
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(685, 79);
             label7.Name = "label7";
-            label7.Size = new Size(50, 20);
+            label7.Size = new Size(139, 23);
             label7.TabIndex = 18;
-            label7.Text = "label7";
+            label7.Text = "Cadastro rapido";
             label7.Click += button5_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.Enabled = false;
+            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            textBox2.Location = new Point(844, 125);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(102, 27);
+            textBox2.TabIndex = 20;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Enabled = false;
+            label8.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(757, 128);
+            label8.Name = "label8";
+            label8.Size = new Size(67, 20);
+            label8.TabIndex = 19;
+            label8.Text = "Senha ";
             // 
             // Cadastro_Tela_2_C
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.OliveDrab;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Cornsilk;
+            ClientSize = new Size(986, 513);
+            Controls.Add(textBox2);
+            Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(pesquisacliente);
             Controls.Add(textBox1);
@@ -255,5 +285,7 @@
         private Label label6;
         private ComboBox pesquisacliente;
         private Label label7;
+        private TextBox textBox2;
+        private Label label8;
     }
 }

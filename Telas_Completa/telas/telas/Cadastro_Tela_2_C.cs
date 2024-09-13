@@ -14,7 +14,7 @@ namespace telas
     public partial class Cadastro_Tela_2_C : Form
     {
         DataTable dt = new DataTable();
-        int Codcliente;
+        int codcliente;
         Cliente cliente = new Cliente();
         Clientecontrole1 clientecontrole = new Clientecontrole1();
         conexao conexao = new conexao();
@@ -76,13 +76,19 @@ namespace telas
             pesquisacliente.DisplayMember = "nome";
             pesquisacliente.SelectedIndex = -1;
 
-            if (pesquisacliente.SelectedIndex > -1)
+            if (pesquisacliente.SelectedIndex >= 1)
             {
                 //Codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
-                dt = conexao.obterdados("select * from cliente where Codcliente=" + Codcliente);
+                dt = conexao.obterdados("select * from cliente where Codcliente=" + codcliente);
                 txtnome.Text = dt.Rows[0][1].ToString();
                 txtemail.Text = dt.Rows[0][2].ToString();
                 txttelefone.Text = dt.Rows[0][3].ToString();
+            }
+            else
+            {
+                txtnome.Clear();
+                txttelefone.Clear();
+                txtemail.Clear();
             }
         }
 
@@ -116,13 +122,14 @@ namespace telas
 
         private void pesquisacliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if(pesquisacliente.selectedindex > -1)
-            //{
-               // dt = conexao.obterdados("select * from cliente where codcliente=" + codcliente);
-                //txtnome.text = dt.rows[0][1].tostring();
-                //txtemail.text = dt.rows[0][2].tostring();
-                //txttelefone.text = dt.rows[0][3].tostring();
-            //}
+            if(pesquisacliente.SelectedIndex > -1)
+            {
+                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
+                dt = conexao.obterdados("select * from cliente where codcliente=" + codcliente);
+                txtnome.Text = dt.Rows[0][1].ToString();
+                txtemail.Text = dt.Rows[0][2].ToString();
+                txttelefone.Text = dt.Rows[0][3].ToString();
+            }
 
         }
 

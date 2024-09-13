@@ -178,7 +178,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.OliveDrab;
+            BackColor = Color.Cornsilk;
             ClientSize = new Size(941, 535);
             Controls.Add(proximatela);
             Controls.Add(editar);
