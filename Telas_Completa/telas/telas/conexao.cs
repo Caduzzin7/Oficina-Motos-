@@ -117,9 +117,12 @@ namespace telas
                     //monta a lista de paramentros juntando os campos e valores
                     //pega os valores do formulario com os campos do banco 
                    
-                
+            if(codigo> 0)
+                {
                     //se o codigo existir no registro será substituido aqui para execução
                     cmd.Parameters.AddWithValue("@id", codigo);
+                }    
+                   
                 
                 //executa o script sql
                 registro = cmd.ExecuteNonQuery();

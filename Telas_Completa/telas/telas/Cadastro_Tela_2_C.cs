@@ -41,6 +41,7 @@ namespace telas
                     cliente.email = txtemail.Text;
                 }
                 cliente.telefone = txttelefone.Text;
+                cliente.senha = txtsenha.Text;
                 if (clientecontrole.cadastrar(cliente) == true)
                 {
                     MessageBox.Show("Usuário cadastrado com sucesso!");
@@ -53,7 +54,7 @@ namespace telas
 
                 }
 
-                cliente.senha=txtsenha.Text;
+
 
             }
             catch (Exception ex)
@@ -87,6 +88,7 @@ namespace telas
                 txtnome.Text = dt.Rows[0][0].ToString();
                 txtemail.Text = dt.Rows[0][2].ToString();
                 txttelefone.Text = dt.Rows[0][1].ToString();
+
             }
             else
             {
@@ -126,13 +128,15 @@ namespace telas
 
         private void pesquisacliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(pesquisacliente.SelectedIndex > -1)
+            if (pesquisacliente.SelectedIndex > -1)
             {
                 codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
                 dt = conexao.obterdados("select * from cliente where codcliente=" + codcliente);
-                txtnome.Text = dt.Rows[0][1].ToString();
-                txtemail.Text = dt.Rows[0][3].ToString();
-                txttelefone.Text = dt.Rows[0][2].ToString();
+                txtnome.Text = dt.Rows[0][0].ToString();
+                txtemail.Text = dt.Rows[0][2].ToString();
+                txttelefone.Text = dt.Rows[0][1].ToString();
+                textBox1.Text = dt.Rows[0][4].ToString();
+                cliente.cod_usuario=Convert.ToInt32(textBox1.Text);
             }
 
         }
@@ -140,6 +144,34 @@ namespace telas
         private void pesquisacliente_SelectionChangeCommitted(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            Cliente musuario = new Cliente();
+            musuario.senha = txtsenha.Text;
+            musuario.email = txtemail.Text;
+
+            Clientecontrole1 cusuario = new Clientecontrole1();
+            if (cusuario.logar(musuario) >= 1)
+            {
+                MessageBox.Show("Acesso autorizado!");
+                Cadastromotocs moto = new Cadastromotocs(codcliente);
+                moto.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Acesso não autorizado!");
+
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           if(clientecontrole.excluir(cliente) == true){
+                MessageBox.Show("registro excluido com sucesso");
+            }
         }
     }
 }

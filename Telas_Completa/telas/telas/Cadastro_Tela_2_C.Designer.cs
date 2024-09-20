@@ -93,7 +93,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10.2F);
-            label4.Location = new Point(192, 164);
+            label4.Location = new Point(201, 211);
             label4.Name = "label4";
             label4.Size = new Size(62, 20);
             label4.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             // txtemail
             // 
-            txtemail.Location = new Point(381, 164);
+            txtemail.Location = new Point(368, 211);
             txtemail.Name = "txtemail";
             txtemail.Size = new Size(292, 27);
             txtemail.TabIndex = 5;
@@ -111,7 +111,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 10.2F);
-            label5.Location = new Point(192, 211);
+            label5.Location = new Point(192, 164);
             label5.Name = "label5";
             label5.Size = new Size(164, 20);
             label5.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             // txttelefone
             // 
-            txttelefone.Location = new Point(381, 211);
+            txttelefone.Location = new Point(381, 164);
             txttelefone.Name = "txttelefone";
             txttelefone.Size = new Size(292, 27);
             txttelefone.TabIndex = 7;
@@ -144,6 +144,7 @@
             button2.TabIndex = 9;
             button2.Text = "excluir:";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -218,7 +219,7 @@
             // txtsenha
             // 
             txtsenha.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            txtsenha.Location = new Point(844, 125);
+            txtsenha.Location = new Point(844, 121);
             txtsenha.Name = "txtsenha";
             txtsenha.Size = new Size(102, 27);
             txtsenha.TabIndex = 20;
@@ -242,6 +243,7 @@
             btnlogin.TabIndex = 21;
             btnlogin.Text = "Login";
             btnlogin.UseVisualStyleBackColor = true;
+            btnlogin.Click += btnlogin_Click;
             // 
             // Cadastro_Tela_2_C
             // 
