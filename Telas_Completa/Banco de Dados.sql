@@ -4,6 +4,7 @@ create table cliente(
 nome varchar(45),
 telefone varchar(14),
 email varchar(45),
+senha varchar (45),
 Codcliente INT primary key auto_increment
 ) ; 
 create table moto(
@@ -49,3 +50,4 @@ insert into moto(marcamoto,modelomoto,anomoto,numerochassi,herimetro,cormoto,tip
 insert into oficina(nome,descricao,endereco,telefone,email,servicosoferecidos,horario) values ("pampa motos","especializada em pecas","rua augusto zibarth","4199990","pampamotos@gmail.com","melhores revisoes","20h");
 
 select *from cliente;
+
