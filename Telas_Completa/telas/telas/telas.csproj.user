@@ -25,5 +25,8 @@
     <Compile Update="relatoriogeral.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="tela senha para cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

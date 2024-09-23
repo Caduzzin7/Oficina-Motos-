@@ -189,3 +189,4 @@ C:\Users\CADU\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\Doc
 C:\Users\CADU\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\Documents\GitHub\Oficina-Motos-\Telas_Completa\telas\telas\obj\Debug\net8.0-windows\telas.genruntimeconfig.cache
 C:\Users\CADU\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\Documents\GitHub\Oficina-Motos-\Telas_Completa\telas\telas\obj\Debug\net8.0-windows\ref\telas.dll
 C:\Users\CADU\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\Documents\GitHub\Oficina-Motos-\Telas_Completa\telas\telas\obj\Debug\net8.0-windows\telas.login.resources
+C:\Users\CADU\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\Documents\GitHub\Oficina-Motos-\Telas_Completa\telas\telas\obj\Debug\net8.0-windows\telas.tela_senha_para_cadastro.resources

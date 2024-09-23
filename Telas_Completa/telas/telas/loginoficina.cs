@@ -13,6 +13,7 @@ namespace telas
     public partial class loginoficina : Form
     {
         conexao con = new conexao();
+        
         public loginoficina()
         {
             InitializeComponent();

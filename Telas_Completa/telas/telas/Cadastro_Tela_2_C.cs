@@ -112,7 +112,7 @@ namespace telas
 
         private void button5_Click(object sender, EventArgs e)
         {
-            loginoficina oficina = new loginoficina();
+            tela_senha_para_cadastro oficina = new tela_senha_para_cadastro();
             oficina.ShowDialog();
         }
 
