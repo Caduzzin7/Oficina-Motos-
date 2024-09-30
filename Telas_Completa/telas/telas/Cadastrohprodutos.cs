@@ -72,7 +72,8 @@ namespace telas
 
         private void button2_Click(object sender, EventArgs e)
         {
-          relatoriogeral cmoto = new relatoriogeral(id_cliente);
+
+          relatorio cmoto = new relatorio(id_cliente);
             cmoto.ShowDialog();
         }
 
