@@ -10,23 +10,23 @@ namespace telas
     {
         conexao con = new conexao();
 
-       
+
         public bool cadastrar(motomodelo moto)
         {
-           
+
             bool resultado = false;
             try
             {
 
 
-                
-                string sql = "insert into moto (marcamoto,modelomoto,kmmoto,cormoto,cod_cliente)" +
-                    "values(@marcamoto,@modelomoto,@kmmoto,@cormoto,@cliente)";
-         
-                string[] campos = { "@marcamoto", "@modelomoto", "@kmmoto", "@cormoto","@cliente"};
-                
-                object[] valores = { moto.marcamoto, moto.modelomoto, moto.kmmoto, moto.cormoto,moto.cod_cliente.ToString() };
-               
+
+                string sql = "insert into moto (marcamoto,modelomoto,kmmoto,cormoto)" +
+                    "values(@marcamoto,@modelomoto,@kmmoto,@cormoto)";
+
+                string[] campos = { "@marcamoto", "@modelomoto", "@kmmoto", "@cormoto" };
+
+                object[] valores = { moto.marcamoto, moto.modelomoto, moto.kmmoto, moto.cormoto };
+
                 if (con.cadastrar(0, campos, valores, sql) >= 1)
                 {
                     resultado = true;
@@ -45,6 +45,7 @@ namespace telas
 
 
         }
+    
         public bool editar(motomodelo motom)
         {
             bool resultado = false;
