@@ -15,8 +15,11 @@ namespace telas
     public partial class Cadastromotocs : Form
     {
         int id_cliente;
-        int codcliente; 
-       conexao conexao = new conexao();
+        int codcliente;
+        motomodelo motomodelo = new motomodelo();
+        DataTable dt = new DataTable();
+
+        conexao conexao = new conexao();
         public Cadastromotocs(int id_cliente)
         {
             InitializeComponent();
@@ -40,7 +43,10 @@ namespace telas
 
         private void Cadastromotocs_Load(object sender, EventArgs e)
         {
-
+            pesquisacliente.DataSource = conexao.obterdados("select codigo_cliente,  marcamoto from moto");
+            pesquisacliente.ValueMember = "codigo_cliente";
+            pesquisacliente.DisplayMember = "marcamoto";
+            pesquisacliente.SelectedIndex = -1;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -83,14 +89,19 @@ namespace telas
         {
             if (pesquisacliente.SelectedIndex > -1)
             {
-                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
+                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Cod_cliente"]);
                 dt = conexao.obterdados("select * from moto where codcliente=" + codcliente);
-                marcamoto.Text = dt.Rows[0][0].ToString();
-                modelomoto.Text = dt.Rows[0][2].ToString();
-                kmmoto.Text = dt.Rows[0][1].ToString();
-                cormoto.Text = dt.Rows[0][4].ToString();
-                cliente.cod_usuario = Convert.ToInt32(textBox1.Text);
+                txtnome.Text = dt.Rows[0][0].ToString();
+                textBox2.Text = dt.Rows[0][2].ToString();
+                textBox4.Text = dt.Rows[0][1].ToString();
+                textBox5.Text = dt.Rows[0][4].ToString();
+                motomodelo.codigo = Convert.ToInt32(codmoto1.Text);
             }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

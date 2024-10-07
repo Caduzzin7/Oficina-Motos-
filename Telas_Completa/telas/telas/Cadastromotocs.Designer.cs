@@ -42,6 +42,8 @@
             button2 = new Button();
             label6 = new Label();
             pesquisacliente = new ComboBox();
+            label2 = new Label();
+            codmoto1 = new TextBox();
             SuspendLayout();
             // 
             // txtnome
@@ -173,12 +175,32 @@
             pesquisacliente.TabIndex = 31;
             pesquisacliente.SelectedIndexChanged += pesquisacliente_SelectedIndexChanged;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(122, 361);
+            label2.Name = "label2";
+            label2.Size = new Size(79, 20);
+            label2.TabIndex = 34;
+            label2.Text = "Cod Moto:";
+            
+            // 
+            // codmoto1
+            // 
+            codmoto1.Location = new Point(305, 361);
+            codmoto1.Name = "codmoto1";
+            codmoto1.Size = new Size(292, 27);
+            codmoto1.TabIndex = 33;
+            codmoto1.TextChanged += textBox1_TextChanged;
+            // 
             // Cadastromotocs
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(942, 450);
+            Controls.Add(label2);
+            Controls.Add(codmoto1);
             Controls.Add(label6);
             Controls.Add(pesquisacliente);
             Controls.Add(button2);
@@ -216,5 +238,7 @@
         private Button button2;
         private Label label6;
         private ComboBox pesquisacliente;
+        private Label label2;
+        private TextBox codmoto1;
     }
 }

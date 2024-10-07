@@ -202,7 +202,6 @@
             pesquisacliente.Name = "pesquisacliente";
             pesquisacliente.Size = new Size(102, 28);
             pesquisacliente.TabIndex = 17;
-            pesquisacliente.Text = "c";
             pesquisacliente.SelectedIndexChanged += pesquisacliente_SelectedIndexChanged;
             pesquisacliente.SelectionChangeCommitted += pesquisacliente_SelectionChangeCommitted;
             // 
@@ -212,9 +211,9 @@
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.Location = new Point(685, 79);
             label7.Name = "label7";
-            label7.Size = new Size(18, 23);
+            label7.Size = new Size(117, 23);
             label7.TabIndex = 18;
-            label7.Text = "c";
+            label7.Text = "Login Rapido";
             label7.Click += button5_Click;
             // 
             // txtsenha
@@ -224,18 +223,17 @@
             txtsenha.Name = "txtsenha";
             txtsenha.Size = new Size(102, 27);
             txtsenha.TabIndex = 20;
-            txtsenha.Text = "c";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Enabled = false;
             label8.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(757, 128);
+            label8.Location = new Point(718, 124);
             label8.Name = "label8";
-            label8.Size = new Size(19, 20);
+            label8.Size = new Size(61, 20);
             label8.TabIndex = 19;
-            label8.Text = "c";
+            label8.Text = "Senha";
             // 
             // btnlogin
             // 
