@@ -38,9 +38,10 @@
             label5 = new Label();
             label7 = new Label();
             label8 = new Label();
-            label9 = new Label();
             button1 = new Button();
             button2 = new Button();
+            label6 = new Label();
+            pesquisacliente = new ComboBox();
             SuspendLayout();
             // 
             // txtnome
@@ -132,16 +133,6 @@
             label8.TabIndex = 17;
             label8.Text = "Informações da Moto:";
             // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(665, 405);
-            label9.Name = "label9";
-            label9.Size = new Size(97, 20);
-            label9.TabIndex = 28;
-            label9.Text = "Proxima Tela:";
-            label9.Click += label9_Click;
-            // 
             // button1
             // 
             button1.Location = new Point(548, 394);
@@ -162,15 +153,36 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(623, 61);
+            label6.Name = "label6";
+            label6.Size = new Size(139, 23);
+            label6.TabIndex = 32;
+            label6.Text = "Cadastro rapido";
+            // 
+            // pesquisacliente
+            // 
+            pesquisacliente.FormattingEnabled = true;
+            pesquisacliente.Items.AddRange(new object[] { "0" });
+            pesquisacliente.Location = new Point(802, 56);
+            pesquisacliente.Name = "pesquisacliente";
+            pesquisacliente.Size = new Size(102, 28);
+            pesquisacliente.TabIndex = 31;
+            pesquisacliente.SelectedIndexChanged += pesquisacliente_SelectedIndexChanged;
+            // 
             // Cadastromotocs
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(942, 450);
+            Controls.Add(label6);
+            Controls.Add(pesquisacliente);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label5);
@@ -200,8 +212,9 @@
         private Label label5;
         private Label label7;
         private Label label8;
-        private Label label9;
         private Button button1;
         private Button button2;
+        private Label label6;
+        private ComboBox pesquisacliente;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,12 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace telas
 {
     public partial class Cadastromotocs : Form
     {
         int id_cliente;
+        int codcliente; 
+       conexao conexao = new conexao();
         public Cadastromotocs(int id_cliente)
         {
             InitializeComponent();
@@ -53,10 +57,11 @@ namespace telas
             mmodelo.cormoto = textBox5.Text;
             mmodelo.cod_cliente = id_cliente;
             motocontrole cmoto = new motocontrole();
-            if (cmoto.cadastrar( mmodelo) == true)
+            if (cmoto.cadastrar(mmodelo) == true)
             {
-                MessageBox.Show("cadatrado com sucesso") ;
-            } else
+                MessageBox.Show("cadatrado com sucesso");
+            }
+            else
             {
                 MessageBox.Show("erro ao cadastrar a moto");
             }
@@ -71,6 +76,21 @@ namespace telas
 
         private void txtnome_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void pesquisacliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (pesquisacliente.SelectedIndex > -1)
+            {
+                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
+                dt = conexao.obterdados("select * from moto where codcliente=" + codcliente);
+                marcamoto.Text = dt.Rows[0][0].ToString();
+                modelomoto.Text = dt.Rows[0][2].ToString();
+                kmmoto.Text = dt.Rows[0][1].ToString();
+                cormoto.Text = dt.Rows[0][4].ToString();
+                cliente.cod_usuario = Convert.ToInt32(textBox1.Text);
+            }
 
         }
     }
