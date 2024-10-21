@@ -89,8 +89,8 @@ namespace telas
         {
             if (pesquisacliente.SelectedIndex > -1)
             {
-                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Cod_cliente"]);
-                dt = conexao.obterdados("select * from moto where codcliente=" + codcliente);
+                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["codigo_cliente"]);
+                dt = conexao.obterdados("select * from moto where codigo_cliente=" + codcliente);
                 txtnome.Text = dt.Rows[0][0].ToString();
                 textBox2.Text = dt.Rows[0][2].ToString();
                 textBox4.Text = dt.Rows[0][1].ToString();
