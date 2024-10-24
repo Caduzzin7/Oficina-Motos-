@@ -59,6 +59,7 @@ namespace telas
 
                 }
                 mecanico.nomeoficina = nomeoficina.Text;
+                mecanico.nomemecanico = nomemecanico.Text;
                 mecanico.emailmecanico = emailmecanico.Text;
                 mecanico.senhamecanico = senhamecanico.Text;
                 if (mecanicocontrole.cadastrar(mecanico) == true)

@@ -18,8 +18,8 @@ namespace telas
             bool resultado = false;
             try
             {
-                string sql = "insert into cadastromecanico (nomeoficina,nomemecanico,emailmecanico,senhamecanico)values(@nomeoficina,@nomemecanico,@emailmecanico,@senhamecanico)";
-                string[] campos = { "@nomeoficina", "@nomemecanico", "email", "senhamecanico" };
+                string sql = "insert into cadastromecanico (nomeooficina,nomemecanico,emailmecanico,senhamecanico)values('@nomeoficina','@nomemecanico','@emailmecanico',@senhamecanico)";
+                string[] campos = { "@nomeoficina", "@nomemecanico", "@email", "@senhamecanico" };
                 string[] valores = { mecanico.nomeoficina, mecanico.nomemecanico, mecanico.emailmecanico, mecanico.senhamecanico };
                 if (con.cadastrar(0, campos,valores,sql) >= 1)
                 {

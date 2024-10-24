@@ -87,7 +87,7 @@ namespace telas
 
         private void pesquisacliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (pesquisacliente.SelectedIndex > -1)
+            if (pesquisacliente.SelectedIndex != -1)
             {
                 codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["codigo_cliente"]);
                 dt = conexao.obterdados("select * from moto where codigo_cliente=" + codcliente);
@@ -95,6 +95,7 @@ namespace telas
                 textBox2.Text = dt.Rows[0][2].ToString();
                 textBox4.Text = dt.Rows[0][1].ToString();
                 textBox5.Text = dt.Rows[0][4].ToString();
+                codmoto1.Text = dt.Rows[0][5].ToString();
                 motomodelo.codigo = Convert.ToInt32(codmoto1.Text);
             }
 
