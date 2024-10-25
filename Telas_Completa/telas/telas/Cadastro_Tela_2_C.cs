@@ -136,7 +136,7 @@ namespace telas
                 txtemail.Text = dt.Rows[0][2].ToString();
                 txttelefone.Text = dt.Rows[0][1].ToString();
                 textBox1.Text = dt.Rows[0][4].ToString();
-                cliente.cod_usuario=Convert.ToInt32(textBox1.Text);
+                cliente.cod_usuario = Convert.ToInt32(textBox1.Text);
             }
 
         }
