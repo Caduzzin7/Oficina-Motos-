@@ -31,30 +31,30 @@ namespace telas
 
                 cliente.nome = txtnome.Text;
                 //verificar se o campo email foi preenchido
-                if (string.IsNullOrEmpty(txtemail.Text))
+                if (txtnome.Text == string.Empty || txtemail.Text == string.Empty || txtsenha.Text == string.Empty || txttelefone.Text == string.Empty || textBox1.Text == string.Empty)
                 {
-                    MessageBox.Show("Campo e-mail está vazio!");
+                    MessageBox.Show("Faltou preencher todos campos!");
                     return;
                 }
                 else
                 {
                     cliente.email = txtemail.Text;
+
+                    cliente.telefone = txttelefone.Text;
+                    cliente.senha = txtsenha.Text;
+                    if (clientecontrole.cadastrar(cliente) == true)
+                    {
+                        MessageBox.Show("Usuário cadastrado com sucesso!");
+                        textBox1.Text = cliente.cod_usuario.ToString();
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Erro no cadastrado do usuário!");
+
+                    }
+
                 }
-                cliente.telefone = txttelefone.Text;
-                cliente.senha = txtsenha.Text;
-                if (clientecontrole.cadastrar(cliente) == true)
-                {
-                    MessageBox.Show("Usuário cadastrado com sucesso!");
-                    textBox1.Text = cliente.cod_usuario.ToString();
-                }
-                else
-                {
-
-                    MessageBox.Show("Erro no cadastrado do usuário!");
-
-                }
-
-
 
             }
             catch (Exception ex)
@@ -100,8 +100,13 @@ namespace telas
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
-            cmoto.ShowDialog();
+            
+
+            if(txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text !=string.Empty)
+            {
+                Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
+                cmoto.ShowDialog();
+            } else { MessageBox.Show("Faltou preencher todos os campos");  }
 
         }
 
