@@ -75,6 +75,7 @@ namespace telas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Hide();
             Cadastrohprodutos produto = new Cadastrohprodutos(id_cliente);
             produto.ShowDialog();
 

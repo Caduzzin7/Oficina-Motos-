@@ -161,7 +161,9 @@ namespace telas
             if (cusuario.logar(musuario) >= 1)
             {
                 MessageBox.Show("Acesso autorizado!");
+               
                 Cadastromotocs moto = new Cadastromotocs(codcliente);
+                Hide();
                 moto.ShowDialog();
             }
             else

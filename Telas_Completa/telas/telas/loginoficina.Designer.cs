@@ -43,8 +43,7 @@ namespace telas
             excluir = new Button();
             label5 = new Label();
             codmecanico = new TextBox();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label7
@@ -171,14 +170,15 @@ namespace telas
             codmecanico.Size = new Size(298, 27);
             codmecanico.TabIndex = 33;
             // 
-            // dataGridView1
+            // button1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(802, 116);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(300, 188);
-            dataGridView1.TabIndex = 34;
+            button1.Location = new Point(791, 390);
+            button1.Name = "button1";
+            button1.Size = new Size(194, 29);
+            button1.TabIndex = 34;
+            button1.Text = "serviços pendentes";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // loginoficina
             // 
@@ -186,7 +186,7 @@ namespace telas
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(1108, 453);
-            Controls.Add(dataGridView1);
+            Controls.Add(button1);
             Controls.Add(codmecanico);
             Controls.Add(label5);
             Controls.Add(editar);
@@ -204,7 +204,6 @@ namespace telas
             Name = "loginoficina";
             Text = "loginoficina";
             Load += loginoficina_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -230,6 +229,6 @@ namespace telas
         private Button excluir;
         private Label label5;
         private TextBox codmecanico;
-        private DataGridView dataGridView1;
+        private Button button1;
     }
 }

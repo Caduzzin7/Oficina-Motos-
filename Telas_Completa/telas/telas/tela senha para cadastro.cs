@@ -29,6 +29,7 @@ namespace telas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Hide();
             Cliente zusuario = new Cliente();
             zusuario.senha = txtsenha.Text;
 

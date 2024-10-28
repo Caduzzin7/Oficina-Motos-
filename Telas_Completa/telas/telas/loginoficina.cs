@@ -13,7 +13,7 @@ namespace telas
     public partial class loginoficina : Form
     {
         conexao con = new conexao();
-        
+
         public loginoficina()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace telas
         {
             DataTable dt_Oficina = new DataTable();
 
-            dataGridView1.DataSource = con.obterdados("select * from dadosrevisao");
+            //dataGridView1.DataSource = con.obterdados("select * from dadosrevisao");
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace telas
         private void excluir_Click(object sender, EventArgs e)
         {
             cadastromecanico mecanico = new cadastromecanico();
-            mecanicocontrole mecanicocontrole= new mecanicocontrole();
+            mecanicocontrole mecanicocontrole = new mecanicocontrole();
             mecanico.cod_mecanico = Convert.ToInt32(codmecanico.Text);
             if (mecanicocontrole.excluir(mecanico) == true)
             {
@@ -110,6 +110,12 @@ namespace telas
             {
                 MessageBox.Show("Erro no cadastrado do mecanico!");
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            servicospendetes 
         }
     }
 }
