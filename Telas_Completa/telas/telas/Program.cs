@@ -11,7 +11,7 @@ namespace telas
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new menu_oficina()); //Cadastro_Tela_2_C
+            Application.Run(new menu_oficina()); 
 
         }
     }

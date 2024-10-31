@@ -35,11 +35,12 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Sitka Small", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label8.Location = new Point(313, 215);
+            label8.Location = new Point(332, 21);
             label8.Name = "label8";
-            label8.Size = new Size(175, 21);
+            label8.Size = new Size(88, 21);
             label8.TabIndex = 18;
-            label8.Text = "Informações da Moto:";
+            label8.Text = "Sobre nós ";
+            label8.Click += label8_Click_1;
             // 
             // sobrenos
             // 
