@@ -104,6 +104,7 @@ namespace telas
 
             if(txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text !=string.Empty)
             {
+                Hide();
                 Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
                 cmoto.ShowDialog();
             } else { MessageBox.Show("Faltou preencher todos os campos");  }
@@ -117,7 +118,8 @@ namespace telas
 
         private void button5_Click(object sender, EventArgs e)
         {
-            tela_senha_para_cadastro oficina = new tela_senha_para_cadastro();
+            Hide();
+            menu_oficina oficina = new menu_oficina();
             oficina.ShowDialog();
         }
 

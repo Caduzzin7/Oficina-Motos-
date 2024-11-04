@@ -22,7 +22,7 @@ namespace telas
 
         private void relatoriogeral_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = con.obterdados("select * from dadosrevisao where ");
+            dataGridView1.DataSource = con.obterdados("select * from cliente inner join moto on moto.codigo_cliente=cliente.codcliente ");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

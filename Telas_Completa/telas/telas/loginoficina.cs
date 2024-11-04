@@ -116,7 +116,7 @@ namespace telas
         {
             Hide();
             servicospendetes  form = new servicospendetes();
-
+            form.ShowDialog();
         }
     }
 }

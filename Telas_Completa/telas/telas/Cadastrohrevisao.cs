@@ -36,9 +36,9 @@ namespace telas
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Hide();
             revisaocontrole revisaocontrole = new revisaocontrole();
-
+           
             try
             {
 

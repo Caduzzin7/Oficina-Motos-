@@ -26,5 +26,12 @@ namespace telas
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            menu_oficina form = new menu_oficina();
+            form.ShowDialog();
+        }
     }
 }

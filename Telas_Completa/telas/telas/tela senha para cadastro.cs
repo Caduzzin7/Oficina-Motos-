@@ -34,10 +34,10 @@ namespace telas
             zusuario.senha = txtsenha.Text;
 
             Clientecontrole1 cusuario = new Clientecontrole1();
-            if (zusuario.senha == "mymotos" )
+            if (zusuario.senha == "mymotos")
             {
                 MessageBox.Show("Acesso autorizado!");
-                loginoficina moto = new loginoficina ();
+                loginoficina moto = new loginoficina();
                 moto.ShowDialog();
             }
             else
@@ -45,6 +45,13 @@ namespace telas
                 MessageBox.Show("Acesso não autorizado!");
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            menu_oficina form = new menu_oficina();
+            form.ShowDialog();
         }
     }
 }

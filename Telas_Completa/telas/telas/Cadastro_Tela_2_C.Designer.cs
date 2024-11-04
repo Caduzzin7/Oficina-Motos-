@@ -171,7 +171,7 @@
             button5.Name = "button5";
             button5.Size = new Size(124, 35);
             button5.TabIndex = 12;
-            button5.Text = "Login Oficina ";
+            button5.Text = "Voltar Menu";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
