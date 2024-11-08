@@ -43,8 +43,8 @@ namespace telas
 
         private void Cadastromotocs_Load(object sender, EventArgs e)
         {
-            pesquisacliente.DataSource = conexao.obterdados("select codigo_cliente,  marcamoto from moto");
-            pesquisacliente.ValueMember = "codigo_cliente";
+            pesquisacliente.DataSource = conexao.obterdados("select Codcliente, marcamoto from moto");
+            pesquisacliente.ValueMember = "Codcliente";
             pesquisacliente.DisplayMember = "marcamoto";
             pesquisacliente.SelectedIndex = -1;
         }

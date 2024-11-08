@@ -31,7 +31,7 @@ namespace telas
 
                 cliente.nome = txtnome.Text;
                 //verificar se o campo email foi preenchido
-                if (txtnome.Text == string.Empty || txtemail.Text == string.Empty || txtsenha.Text == string.Empty || txttelefone.Text == string.Empty || textBox1.Text == string.Empty)
+                if (txtnome.Text == string.Empty || txtemail.Text == string.Empty || txtsenha.Text == string.Empty || txttelefone.Text == string.Empty)  //|| textBox1.Text == string.Empty
                 {
                     MessageBox.Show("Faltou preencher todos campos!");
                     return;
@@ -100,14 +100,15 @@ namespace telas
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
 
-            if(txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text !=string.Empty)
+
+            if (txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text != string.Empty)
             {
                 Hide();
                 Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
                 cmoto.ShowDialog();
-            } else { MessageBox.Show("Faltou preencher todos os campos");  }
+            }
+            else { MessageBox.Show("Faltou preencher todos os campos"); }
 
         }
 
@@ -142,8 +143,8 @@ namespace telas
                 txtnome.Text = dt.Rows[0][0].ToString();
                 txtemail.Text = dt.Rows[0][2].ToString();
                 txttelefone.Text = dt.Rows[0][1].ToString();
-                textBox1.Text = dt.Rows[0][3].ToString();
-                cliente.cod_usuario = Convert.ToInt32(textBox1.Text);
+                textBox1.Text = dt.Rows[0][4].ToString();
+                cliente.cod_usuario = codcliente;//Convert.ToInt32(textBox1.Text)
             }
 
         }
@@ -163,7 +164,7 @@ namespace telas
             if (cusuario.logar(musuario) >= 1)
             {
                 MessageBox.Show("Acesso autorizado!");
-               
+
                 Cadastromotocs moto = new Cadastromotocs(codcliente);
                 Hide();
                 moto.ShowDialog();
@@ -178,9 +179,15 @@ namespace telas
 
         private void button2_Click(object sender, EventArgs e)
         {
-           if(clientecontrole.excluir(cliente) == true){
+            if (clientecontrole.excluir(cliente) == true)
+            {
                 MessageBox.Show("registro excluido com sucesso");
             }
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

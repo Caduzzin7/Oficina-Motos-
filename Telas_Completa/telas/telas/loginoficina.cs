@@ -123,7 +123,7 @@ namespace telas
         {
             Hide();
             menu_oficina formm = new menu_oficina();
-            Form.ShowDialog();
+            formm.ShowDialog();
         }
     }
 }

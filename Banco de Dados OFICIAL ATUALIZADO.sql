@@ -1,9 +1,12 @@
 create database Mymotos;
 use Mymotos;
+
+
 create table cliente(
 nome varchar(45),
 telefone varchar(14),
 email varchar(45),
+senha varchar(45),
 Codcliente INT primary key auto_increment
 ) ; 
 create table moto(
@@ -16,6 +19,7 @@ cormoto varchar(10),
 tipomotor varchar (8),
 cilindrada varchar (3),
 Codmoto INT primary key auto_increment
+
 ) ;
 create table dadosrevisao(
 datarevisao varchar (8),
