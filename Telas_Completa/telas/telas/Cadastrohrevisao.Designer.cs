@@ -45,6 +45,7 @@
             cadastrar = new Button();
             codrevisao = new TextBox();
             label3 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label8
@@ -53,7 +54,7 @@
             label8.Font = new Font("Sitka Small", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(304, 71);
             label8.Name = "label8";
-            label8.Size = new Size(195, 21);
+            label8.Size = new Size(196, 23);
             label8.TabIndex = 18;
             label8.Text = "Informações da Revisão:";
             // 
@@ -199,12 +200,23 @@
             label3.TabIndex = 34;
             label3.Text = "código da revisão:";
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 410);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 35;
+            button1.Text = "Voltar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Cadastrohrevisao
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(codrevisao);
             Controls.Add(cadastrar);
@@ -248,5 +260,6 @@
         private Button cadastrar;
         private TextBox codrevisao;
         private Label label3;
+        private Button button1;
     }
 }

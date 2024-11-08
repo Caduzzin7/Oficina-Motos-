@@ -42,6 +42,7 @@
             excluir = new Button();
             editar = new Button();
             proximatela = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label7
@@ -61,7 +62,7 @@
             label8.Font = new Font("Sitka Small", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(305, 82);
             label8.Name = "label8";
-            label8.Size = new Size(194, 21);
+            label8.Size = new Size(195, 23);
             label8.TabIndex = 21;
             label8.Text = "Informações do produto:";
             // 
@@ -174,12 +175,23 @@
             proximatela.UseVisualStyleBackColor = true;
             proximatela.Click += button2_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 450);
+            button1.Name = "button1";
+            button1.Size = new Size(64, 29);
+            button1.TabIndex = 36;
+            button1.Text = "Voltar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_2;
+            // 
             // Cadastrohprodutos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(941, 535);
+            Controls.Add(button1);
             Controls.Add(proximatela);
             Controls.Add(editar);
             Controls.Add(excluir);
@@ -217,5 +229,6 @@
         private Button excluir;
         private Button editar;
         private Button proximatela;
+        private Button button1;
     }
 }

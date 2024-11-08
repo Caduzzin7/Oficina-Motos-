@@ -115,8 +115,15 @@ namespace telas
         private void button1_Click_1(object sender, EventArgs e)
         {
             Hide();
-            servicospendetes  form = new servicospendetes();
+            servicospendetes form = new servicospendetes();
             form.ShowDialog();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            menu_oficina formm = new menu_oficina();
+            Form.ShowDialog();
         }
     }
 }

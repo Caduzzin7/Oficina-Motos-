@@ -73,7 +73,7 @@ namespace telas
         private void button2_Click(object sender, EventArgs e)
         {
 
-          relatorio cmoto = new relatorio(id_cliente);
+            relatorio cmoto = new relatorio(id_cliente);
             cmoto.ShowDialog();
         }
 
@@ -127,6 +127,13 @@ namespace telas
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Hide();
+            Cadastromotocs Form = new Cadastromotocs (id_cliente);
+            Form.ShowDialog();
         }
     }
 }

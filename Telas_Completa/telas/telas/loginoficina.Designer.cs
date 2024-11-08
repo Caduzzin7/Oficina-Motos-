@@ -44,6 +44,7 @@ namespace telas
             label5 = new Label();
             codmecanico = new TextBox();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label7
@@ -126,7 +127,7 @@ namespace telas
             // 
             // cadastrar
             // 
-            cadastrar.Location = new Point(640, 390);
+            cadastrar.Location = new Point(646, 390);
             cadastrar.Name = "cadastrar";
             cadastrar.Size = new Size(112, 29);
             cadastrar.TabIndex = 28;
@@ -180,12 +181,23 @@ namespace telas
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
+            // button2
+            // 
+            button2.Location = new Point(12, 412);
+            button2.Name = "button2";
+            button2.Size = new Size(99, 29);
+            button2.TabIndex = 35;
+            button2.Text = "Voltar Menu";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
+            // 
             // loginoficina
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(1108, 453);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(codmecanico);
             Controls.Add(label5);
@@ -230,5 +242,6 @@ namespace telas
         private Label label5;
         private TextBox codmecanico;
         private Button button1;
+        private Button button2;
     }
 }

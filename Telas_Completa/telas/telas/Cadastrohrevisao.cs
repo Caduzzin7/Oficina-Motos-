@@ -12,7 +12,7 @@ namespace telas
 {
     public partial class Cadastrohrevisao : Form
     {
-
+        int id_cliente;
         revisao revisao = new revisao();
         public Cadastrohrevisao()
         {
@@ -26,7 +26,7 @@ namespace telas
 
         private void label6_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void Cadastrohrevisao_Load(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace telas
         {
             Hide();
             revisaocontrole revisaocontrole = new revisaocontrole();
-           
+
             try
             {
 
@@ -77,6 +77,13 @@ namespace telas
         private void codrevisao_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Cadastromotocs form = new Cadastromotocs (id_cliente);
+            form.ShowDialog();
         }
     }
 }

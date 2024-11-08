@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             dataGridView1 = new DataGridView();
+            excluir = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -53,12 +54,23 @@
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // excluir
+            // 
+            excluir.Location = new Point(12, 409);
+            excluir.Name = "excluir";
+            excluir.Size = new Size(104, 29);
+            excluir.TabIndex = 31;
+            excluir.Text = "Voltar Menu";
+            excluir.UseVisualStyleBackColor = true;
+            excluir.Click += excluir_Click;
+            // 
             // servicospendetes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(excluir);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "servicospendetes";
@@ -72,5 +84,6 @@
 
         private Label label1;
         private DataGridView dataGridView1;
+        private Button excluir;
     }
 }

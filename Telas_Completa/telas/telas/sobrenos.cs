@@ -33,5 +33,15 @@ namespace telas
             menu_oficina form = new menu_oficina();
             form.ShowDialog();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
