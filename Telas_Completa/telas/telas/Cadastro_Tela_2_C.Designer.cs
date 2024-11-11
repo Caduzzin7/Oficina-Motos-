@@ -161,7 +161,7 @@
             button4.Name = "button4";
             button4.Size = new Size(133, 29);
             button4.TabIndex = 11;
-            button4.Text = "próxima tela:";
+            button4.Text = "Atualizar";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 

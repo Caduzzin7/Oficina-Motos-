@@ -45,6 +45,8 @@
             label2 = new Label();
             codmoto1 = new TextBox();
             button3 = new Button();
+            label9 = new Label();
+            CbClint = new ComboBox();
             SuspendLayout();
             // 
             // txtnome
@@ -132,7 +134,7 @@
             label8.Font = new Font("Sitka Small", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(293, 84);
             label8.Name = "label8";
-            label8.Size = new Size(176, 23);
+            label8.Size = new Size(175, 21);
             label8.TabIndex = 17;
             label8.Text = "Informações da Moto:";
             // 
@@ -203,12 +205,33 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(644, 105);
+            label9.Name = "label9";
+            label9.Size = new Size(118, 23);
+            label9.TabIndex = 36;
+            label9.Text = "Usuário Ativo";
+            // 
+            // CbClint
+            // 
+            CbClint.FormattingEnabled = true;
+            CbClint.Items.AddRange(new object[] { "0" });
+            CbClint.Location = new Point(802, 105);
+            CbClint.Name = "CbClint";
+            CbClint.Size = new Size(102, 28);
+            CbClint.TabIndex = 37;
+            // 
             // Cadastromotocs
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(942, 450);
+            Controls.Add(CbClint);
+            Controls.Add(label9);
             Controls.Add(button3);
             Controls.Add(label2);
             Controls.Add(codmoto1);
@@ -252,5 +275,7 @@
         private Label label2;
         private TextBox codmoto1;
         private Button button3;
+        private Label label9;
+        private ComboBox CbClint;
     }
 }

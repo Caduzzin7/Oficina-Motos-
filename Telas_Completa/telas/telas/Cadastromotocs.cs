@@ -43,10 +43,16 @@ namespace telas
 
         private void Cadastromotocs_Load(object sender, EventArgs e)
         {
-            pesquisacliente.DataSource = conexao.obterdados("select Codcliente, marcamoto from moto");
-            pesquisacliente.ValueMember = "Codcliente";
+            pesquisacliente.DataSource = conexao.obterdados($"select * from moto where codigo_cliente={id_cliente}");
+            pesquisacliente.ValueMember = "codigo_cliente";
             pesquisacliente.DisplayMember = "marcamoto";
             pesquisacliente.SelectedIndex = -1;
+
+            CbClint.DataSource = conexao.obterdados("select * from cliente");
+            CbClint.ValueMember = "Codcliente";
+            CbClint.DisplayMember = "nome";
+            CbClint.SelectedIndex = id_cliente-1;
+
         }
 
         private void label4_Click(object sender, EventArgs e)

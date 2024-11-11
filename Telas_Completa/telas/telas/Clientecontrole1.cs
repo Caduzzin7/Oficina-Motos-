@@ -1,6 +1,8 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.Win32;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,29 +85,32 @@ namespace telas
                 throw new Exception(ex.ToString());
             }
         }
-        public int logar(Cliente usuario)
+        public DataTable logar(Cliente usuario)
         {
+            //iniciar variavel zerada
+            DataTable registro = new DataTable();
             try
             {
-                //iniciar variavel zerada
-                int registro = 0;
+                
                 //preparo a consulta 
-                string sql = "select Codcliente from cliente where email=@email and senha=@senha";
+                string sql = "select * from cliente where email=@mail and senha=@password";
                 MySqlConnection com = con.getConexao();//abro o banco de dados
                 com.Open();
                 MySqlCommand cmd = new MySqlCommand(sql, com);//preparo a execução
-                cmd.Parameters.AddWithValue("@email", usuario.email);
-                cmd.Parameters.AddWithValue("@senha", usuario.senha);
-                registro = Convert.ToInt32(cmd.ExecuteScalar());//
-                return registro;// retorna o ID
+                cmd.Parameters.AddWithValue("@mail", usuario.email);
+                cmd.Parameters.AddWithValue("@password", usuario.senha);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(registro);
+                
 
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.ToString());
             }
+            return registro;// retorna o ID
 
-    }
+        }
         public bool excluir(Cliente usuario)
         {
             bool resultado = false;

@@ -81,6 +81,8 @@ namespace telas
             pesquisacliente.DisplayMember = "nome";
             pesquisacliente.SelectedIndex = -1;
 
+
+
             if (pesquisacliente.SelectedIndex >= 1)
             {
                 //Codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codcliente"]);
@@ -102,13 +104,23 @@ namespace telas
         {
 
 
-            if (txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text != string.Empty)
-            {
-                Hide();
-                Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
-                cmoto.ShowDialog();
-            }
-            else { MessageBox.Show("Faltou preencher todos os campos"); }
+            //if (txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text != string.Empty)
+            //{
+            //    Hide();
+            //    Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
+            //    cmoto.ShowDialog();
+            //}
+            //else { MessageBox.Show("Faltou preencher todos os campos"); }
+
+            pesquisacliente.DataSource = conexao.obterdados("select Codcliente,  nome from cliente");
+            pesquisacliente.ValueMember = "Codcliente";
+            pesquisacliente.DisplayMember = "nome";
+            pesquisacliente.SelectedIndex = -1;
+
+            txtnome.Text = "";
+            txtemail.Text = "";
+            txtsenha.Text = "";
+            txttelefone.Text = "";
 
         }
 
@@ -161,12 +173,15 @@ namespace telas
             musuario.email = txtemail.Text;
 
             Clientecontrole1 cusuario = new Clientecontrole1();
-            if (cusuario.logar(musuario) >= 1)
+            
+            DataTable dt_clint = cusuario.logar(musuario);
+
+            if (Convert.ToInt32(dt_clint.Rows[0]["Codcliente"])>0)
             {
                 MessageBox.Show("Acesso autorizado!");
 
                 Cadastromotocs moto = new Cadastromotocs(codcliente);
-                Hide();
+                this.Hide();
                 moto.ShowDialog();
             }
             else

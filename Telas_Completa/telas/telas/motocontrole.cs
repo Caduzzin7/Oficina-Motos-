@@ -20,12 +20,12 @@ namespace telas
 
 
 
-                string sql = "insert into moto (marcamoto,modelomoto,kmmoto,cormoto)" +
-                    "values(@marcamoto,@modelomoto,@kmmoto,@cormoto)";
+                string sql = "insert into moto (marcamoto,modelomoto,kmmoto,cormoto, codigo_cliente)" +
+                    "values(@marcamoto,@modelomoto,@kmmoto,@cormoto, @CD_cliente)";
 
-                string[] campos = { "@marcamoto", "@modelomoto", "@kmmoto", "@cormoto" };
+                string[] campos = { "@marcamoto", "@modelomoto", "@kmmoto", "@cormoto", "@CD_cliente" };
 
-                object[] valores = { moto.marcamoto, moto.modelomoto, moto.kmmoto, moto.cormoto };
+                object[] valores = { moto.marcamoto, moto.modelomoto, moto.kmmoto, moto.cormoto, moto.cod_cliente };
 
                 if (con.cadastrar(0, campos, valores, sql) >= 1)
                 {
