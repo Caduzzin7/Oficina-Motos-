@@ -41,6 +41,13 @@ namespace telas
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            relatorio cmoto = new relatorio(id_cliente);
+            cmoto.ShowDialog();
+        }
+
         private void Cadastromotocs_Load(object sender, EventArgs e)
         {
             pesquisacliente.DataSource = conexao.obterdados($"select * from moto where codigo_cliente={id_cliente}");
@@ -48,10 +55,15 @@ namespace telas
             pesquisacliente.DisplayMember = "marcamoto";
             pesquisacliente.SelectedIndex = -1;
 
+            txtnome.Text = "";
+            textBox2.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+
             CbClint.DataSource = conexao.obterdados("select * from cliente");
             CbClint.ValueMember = "Codcliente";
             CbClint.DisplayMember = "nome";
-            CbClint.SelectedIndex = id_cliente-1;
+            CbClint.SelectedIndex = id_cliente - 1;
 
         }
 
@@ -60,24 +72,7 @@ namespace telas
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            motomodelo mmodelo = new motomodelo();
-            mmodelo.kmmoto = textBox4.Text;
-            mmodelo.marcamoto = txtnome.Text;
-            mmodelo.modelomoto = textBox2.Text;
-            mmodelo.cormoto = textBox5.Text;
-            mmodelo.cod_cliente = id_cliente;
-            motocontrole cmoto = new motocontrole();
-            if (cmoto.cadastrar(mmodelo) == true)
-            {
-                MessageBox.Show("cadatrado com sucesso");
-            }
-            else
-            {
-                MessageBox.Show("erro ao cadastrar a moto");
-            }
-        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -96,14 +91,14 @@ namespace telas
         {
             if (pesquisacliente.SelectedIndex != -1)
             {
-                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["codigo_cliente"]);
-                dt = conexao.obterdados("select * from moto where codigo_cliente=" + codcliente);
-                txtnome.Text = dt.Rows[0][0].ToString();
-                textBox2.Text = dt.Rows[0][2].ToString();
-                textBox4.Text = dt.Rows[0][1].ToString();
-                textBox5.Text = dt.Rows[0][4].ToString();
-                codmoto1.Text = dt.Rows[0][5].ToString();
-                motomodelo.codigo = Convert.ToInt32(codmoto1.Text);
+                codcliente = Convert.ToInt32(((DataRowView)pesquisacliente.SelectedItem)["Codmoto"]);
+                dt = conexao.obterdados("select * from moto where Codmoto=" + codcliente);
+                txtnome.Text = dt.Rows[0]["marcamoto"].ToString();
+                textBox2.Text = dt.Rows[0]["modelomoto"].ToString();
+                textBox4.Text = dt.Rows[0]["kmmoto"].ToString();
+                textBox5.Text = dt.Rows[0]["cormoto"].ToString();
+                //codmoto1.Text = dt.Rows[0][5].ToString();
+                //motomodelo.codigo = Convert.ToInt32(codmoto1.Text);
             }
 
         }
@@ -118,6 +113,50 @@ namespace telas
             Hide();
             Cadastro_Tela_2_C form = new Cadastro_Tela_2_C();
             form.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pesquisacliente.DataSource = conexao.obterdados($"select * from moto where codigo_cliente={id_cliente}");
+            pesquisacliente.ValueMember = "codigo_cliente";
+            pesquisacliente.DisplayMember = "marcamoto";
+            pesquisacliente.SelectedIndex = -1;
+
+            txtnome.Text = "";
+            textBox2.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+
+
+            CbClint.DataSource = conexao.obterdados("select * from cliente");
+            CbClint.ValueMember = "Codcliente";
+            CbClint.DisplayMember = "nome";
+            CbClint.SelectedIndex = id_cliente - 1;
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            motomodelo mmodelo = new motomodelo();
+            mmodelo.kmmoto = textBox4.Text;
+            mmodelo.marcamoto = txtnome.Text;
+            mmodelo.modelomoto = textBox2.Text;
+            mmodelo.cormoto = textBox5.Text;
+            mmodelo.cod_cliente = id_cliente;
+            motocontrole cmoto = new motocontrole();
+            if (cmoto.cadastrar(mmodelo) == true)
+            {
+                MessageBox.Show("cadatrado com sucesso");
+            }
+            else
+            {
+                MessageBox.Show("erro ao cadastrar a moto");
+            }
+        }
+
+        private void CbClint_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

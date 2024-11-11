@@ -8,6 +8,7 @@ namespace telas
 {
     public class cadastroproduto
     {
+        public int cod_cliente;
         public int cod_produto;
         public string nomeproduto;
         public string descricaogeral;

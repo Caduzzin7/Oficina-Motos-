@@ -20,11 +20,11 @@ namespace telas
 
 
                 //monta o script sql de cadastrar as informações no banco
-                string sql = "insert into cadastroprodutos (nomeproduto,descricaogeral,anodapeca,preco)values(@nomeproduto,@descricaogeral,@anodapeca,@preco)";
+                string sql = "insert into cadastroprodutos (nomeproduto,descricaogeral,anodapeca,preco,codigo_cliente)values(@nomeproduto,@descricaogeral,@anodapeca,@preco,@codigo_cliente)";
                 //monto o vetor de atributos da tabela usuario
-                string[] campos = { "@nomeproduto", "@descricaogeral", "@anodapeca","@preco"};
+                string[] campos = { "@nomeproduto", "@descricaogeral", "@anodapeca","@preco","@codigo_cliente"};
                 //monto o vetor com os valores do formulario
-                string[] valores = { produto.nomeproduto, produto.descricaogeral, produto.anodapeca, produto.precototal };
+                string[] valores = { produto.nomeproduto, produto.descricaogeral, produto.anodapeca, produto.precototal , produto.codigo_cliente};
                 //testar o insert no banco de dados
                 if (con.cadastrar(0, campos, valores, sql) >= 1)
                 {

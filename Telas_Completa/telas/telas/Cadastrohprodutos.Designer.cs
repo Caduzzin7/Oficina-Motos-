@@ -39,10 +39,10 @@
             label2 = new Label();
             label3 = new Label();
             cadastrar = new Button();
-            excluir = new Button();
-            editar = new Button();
             proximatela = new Button();
             button1 = new Button();
+            CbClint = new ComboBox();
+            label9 = new Label();
             SuspendLayout();
             // 
             // label7
@@ -62,7 +62,7 @@
             label8.Font = new Font("Sitka Small", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label8.Location = new Point(305, 82);
             label8.Name = "label8";
-            label8.Size = new Size(195, 23);
+            label8.Size = new Size(194, 21);
             label8.TabIndex = 21;
             label8.Text = "Informações do produto:";
             // 
@@ -145,26 +145,6 @@
             cadastrar.UseVisualStyleBackColor = true;
             cadastrar.Click += button1_Click;
             // 
-            // excluir
-            // 
-            excluir.Location = new Point(210, 409);
-            excluir.Name = "excluir";
-            excluir.Size = new Size(94, 29);
-            excluir.TabIndex = 33;
-            excluir.Text = "excluir";
-            excluir.UseVisualStyleBackColor = true;
-            excluir.Click += excluir_Click;
-            // 
-            // editar
-            // 
-            editar.Location = new Point(327, 409);
-            editar.Name = "editar";
-            editar.Size = new Size(94, 29);
-            editar.TabIndex = 34;
-            editar.Text = "editar:";
-            editar.UseVisualStyleBackColor = true;
-            editar.Click += button1_Click_1;
-            // 
             // proximatela
             // 
             proximatela.Location = new Point(610, 409);
@@ -173,7 +153,6 @@
             proximatela.TabIndex = 35;
             proximatela.Text = "ir para o relatorio:";
             proximatela.UseVisualStyleBackColor = true;
-            proximatela.Click += button2_Click;
             // 
             // button1
             // 
@@ -185,16 +164,37 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_2;
             // 
+            // CbClint
+            // 
+            CbClint.FormattingEnabled = true;
+            CbClint.Items.AddRange(new object[] { "0" });
+            CbClint.Location = new Point(827, 45);
+            CbClint.Name = "CbClint";
+            CbClint.Size = new Size(102, 28);
+            CbClint.TabIndex = 41;
+            CbClint.SelectedIndexChanged += CbClint_SelectedIndexChanged;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(669, 45);
+            label9.Name = "label9";
+            label9.Size = new Size(118, 23);
+            label9.TabIndex = 40;
+            label9.Text = "Usuário Ativo";
+            label9.Click += label9_Click;
+            // 
             // Cadastrohprodutos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(941, 535);
+            Controls.Add(CbClint);
+            Controls.Add(label9);
             Controls.Add(button1);
             Controls.Add(proximatela);
-            Controls.Add(editar);
-            Controls.Add(excluir);
             Controls.Add(cadastrar);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -226,9 +226,9 @@
         private Label label2;
         private Label label3;
         private Button cadastrar;
-        private Button excluir;
-        private Button editar;
         private Button proximatela;
         private Button button1;
+        private ComboBox CbClint;
+        private Label label9;
     }
 }

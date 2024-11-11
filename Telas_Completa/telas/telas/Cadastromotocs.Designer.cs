@@ -42,11 +42,10 @@
             button2 = new Button();
             label6 = new Label();
             pesquisacliente = new ComboBox();
-            label2 = new Label();
-            codmoto1 = new TextBox();
             button3 = new Button();
             label9 = new Label();
             CbClint = new ComboBox();
+            button4 = new Button();
             SuspendLayout();
             // 
             // txtnome
@@ -156,13 +155,13 @@
             button2.TabIndex = 30;
             button2.Text = "cadastrar";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += button2_Click_1;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(623, 61);
+            label6.Location = new Point(623, 89);
             label6.Name = "label6";
             label6.Size = new Size(139, 23);
             label6.TabIndex = 32;
@@ -172,28 +171,11 @@
             // 
             pesquisacliente.FormattingEnabled = true;
             pesquisacliente.Items.AddRange(new object[] { "0" });
-            pesquisacliente.Location = new Point(802, 56);
+            pesquisacliente.Location = new Point(802, 84);
             pesquisacliente.Name = "pesquisacliente";
             pesquisacliente.Size = new Size(102, 28);
             pesquisacliente.TabIndex = 31;
             pesquisacliente.SelectedIndexChanged += pesquisacliente_SelectedIndexChanged;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(122, 361);
-            label2.Name = "label2";
-            label2.Size = new Size(79, 20);
-            label2.TabIndex = 34;
-            label2.Text = "Cod Moto:";
-            // 
-            // codmoto1
-            // 
-            codmoto1.Location = new Point(305, 361);
-            codmoto1.Name = "codmoto1";
-            codmoto1.Size = new Size(292, 27);
-            codmoto1.TabIndex = 33;
-            codmoto1.TextChanged += textBox1_TextChanged;
             // 
             // button3
             // 
@@ -209,7 +191,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(644, 105);
+            label9.Location = new Point(644, 42);
             label9.Name = "label9";
             label9.Size = new Size(118, 23);
             label9.TabIndex = 36;
@@ -219,10 +201,21 @@
             // 
             CbClint.FormattingEnabled = true;
             CbClint.Items.AddRange(new object[] { "0" });
-            CbClint.Location = new Point(802, 105);
+            CbClint.Location = new Point(802, 42);
             CbClint.Name = "CbClint";
             CbClint.Size = new Size(102, 28);
             CbClint.TabIndex = 37;
+            CbClint.SelectedIndexChanged += CbClint_SelectedIndexChanged;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(674, 396);
+            button4.Name = "button4";
+            button4.Size = new Size(111, 29);
+            button4.TabIndex = 38;
+            button4.Text = "Atualizar";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Cadastromotocs
             // 
@@ -230,11 +223,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(942, 450);
+            Controls.Add(button4);
             Controls.Add(CbClint);
             Controls.Add(label9);
             Controls.Add(button3);
-            Controls.Add(label2);
-            Controls.Add(codmoto1);
             Controls.Add(label6);
             Controls.Add(pesquisacliente);
             Controls.Add(button2);
@@ -272,10 +264,9 @@
         private Button button2;
         private Label label6;
         private ComboBox pesquisacliente;
-        private Label label2;
-        private TextBox codmoto1;
         private Button button3;
         private Label label9;
         private ComboBox CbClint;
+        private Button button4;
     }
 }
