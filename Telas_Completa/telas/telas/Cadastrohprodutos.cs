@@ -145,5 +145,12 @@ namespace telas
         {
 
         }
+
+        private void proximatela_Click(object sender, EventArgs e)
+        {
+            relatoriogeral relt = new relatoriogeral(id_cliente);
+            this.Hide();
+            relt.ShowDialog();
+        }
     }
 }

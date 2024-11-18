@@ -31,6 +31,7 @@
             label1 = new Label();
             dataGridView1 = new DataGridView();
             excluir = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -53,6 +54,7 @@
             dataGridView1.Size = new Size(436, 222);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.Click += dataGridView1_Click;
             // 
             // excluir
             // 
@@ -64,17 +66,29 @@
             excluir.UseVisualStyleBackColor = true;
             excluir.Click += excluir_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(733, 177);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 32;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // servicospendetes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1902, 1033);
+            Controls.Add(button1);
             Controls.Add(excluir);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "servicospendetes";
             Text = "servicospendetes";
+            Load += servicospendetes_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -85,5 +99,6 @@
         private Label label1;
         private DataGridView dataGridView1;
         private Button excluir;
+        private Button button1;
     }
 }

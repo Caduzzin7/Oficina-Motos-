@@ -41,10 +41,12 @@ namespace telas
             cadastrar = new Button();
             editar = new Button();
             excluir = new Button();
-            label5 = new Label();
-            codmecanico = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            CbClint = new ComboBox();
+            label9 = new Label();
+            label5 = new Label();
+            codmecanico = new TextBox();
             SuspendLayout();
             // 
             // label7
@@ -91,6 +93,7 @@ namespace telas
             nomeoficina.Name = "nomeoficina";
             nomeoficina.Size = new Size(292, 27);
             nomeoficina.TabIndex = 18;
+            nomeoficina.TextChanged += nomeoficina_TextChanged;
             // 
             // label2
             // 
@@ -155,22 +158,6 @@ namespace telas
             excluir.UseVisualStyleBackColor = true;
             excluir.Click += excluir_Click;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(163, 341);
-            label5.Name = "label5";
-            label5.Size = new Size(127, 20);
-            label5.TabIndex = 32;
-            label5.Text = "codigo mecanico:";
-            // 
-            // codmecanico
-            // 
-            codmecanico.Location = new Point(344, 342);
-            codmecanico.Name = "codmecanico";
-            codmecanico.Size = new Size(298, 27);
-            codmecanico.TabIndex = 33;
-            // 
             // button1
             // 
             button1.Location = new Point(791, 390);
@@ -191,12 +178,50 @@ namespace telas
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
             // 
+            // CbClint
+            // 
+            CbClint.FormattingEnabled = true;
+            CbClint.Items.AddRange(new object[] { "0" });
+            CbClint.Location = new Point(921, 55);
+            CbClint.Name = "CbClint";
+            CbClint.Size = new Size(102, 28);
+            CbClint.TabIndex = 43;
+            CbClint.SelectedIndexChanged += CbClint_SelectedIndexChanged;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(763, 55);
+            label9.Name = "label9";
+            label9.Size = new Size(96, 23);
+            label9.TabIndex = 42;
+            label9.Text = "cad rapido";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(163, 341);
+            label5.Name = "label5";
+            label5.Size = new Size(127, 20);
+            label5.TabIndex = 32;
+            label5.Text = "codigo mecanico:";
+            // 
+            // codmecanico
+            // 
+            codmecanico.Location = new Point(344, 342);
+            codmecanico.Name = "codmecanico";
+            codmecanico.Size = new Size(298, 27);
+            codmecanico.TabIndex = 33;
+            // 
             // loginoficina
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(1108, 453);
+            Controls.Add(CbClint);
+            Controls.Add(label9);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(codmecanico);
@@ -239,9 +264,11 @@ namespace telas
         private Button cadastrar;
         private Button editar;
         private Button excluir;
-        private Label label5;
-        private TextBox codmecanico;
         private Button button1;
         private Button button2;
+        private ComboBox CbClint;
+        private Label label9;
+        private Label label5;
+        private TextBox codmecanico;
     }
 }

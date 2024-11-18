@@ -12,8 +12,10 @@ namespace telas
 {
     public partial class tela_senha_para_cadastro : Form
     {
-        public tela_senha_para_cadastro()
+        int id_cliente = 0;
+        public tela_senha_para_cadastro(int id)
         {
+            this.id_cliente = id;
             InitializeComponent();
         }
 
@@ -37,7 +39,7 @@ namespace telas
             if (zusuario.senha == "mymotos")
             {
                 MessageBox.Show("Acesso autorizado!");
-                loginoficina moto = new loginoficina();
+                loginoficina moto = new loginoficina(id_cliente);
                 moto.ShowDialog();
             }
             else

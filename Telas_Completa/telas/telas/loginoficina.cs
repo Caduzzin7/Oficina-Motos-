@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,21 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace telas
 {
     public partial class loginoficina : Form
     {
         conexao con = new conexao();
-
-        public loginoficina()
+        int id_cliente = 0;
+        int codcliente;
+        public loginoficina(int id)
         {
+            this.id_cliente = id;
             InitializeComponent();
         }
 
         private void loginoficina_Load(object sender, EventArgs e)
         {
             DataTable dt_Oficina = new DataTable();
+
+
+            CbClint.DataSource = con.obterdados("select * from cadastromecanico");
+            CbClint.ValueMember = "codcadmecanico";
+            CbClint.DisplayMember = "nomemecanico";
+            CbClint.SelectedIndex = id_cliente - 1;
 
             //dataGridView1.DataSource = con.obterdados("select * from dadosrevisao");
         }
@@ -115,7 +125,7 @@ namespace telas
         private void button1_Click_1(object sender, EventArgs e)
         {
             Hide();
-            servicospendetes form = new servicospendetes();
+            servicospendetes form = new servicospendetes(id_cliente);
             form.ShowDialog();
         }
 
@@ -124,6 +134,26 @@ namespace telas
             Hide();
             menu_oficina formm = new menu_oficina();
             formm.ShowDialog();
+        }
+
+        private void CbClint_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CbClint.SelectedIndex > -1)
+            {
+                codcliente = Convert.ToInt32(((DataRowView) CbClint.SelectedItem)["Codcliente"]);
+                DataTable dt = con.obterdados("select * from cliente where codcliente=" + codcliente);
+                nomeoficina.Text = dt.Rows[0][0].ToString();
+                nomemecanico.Text = dt.Rows[0][1].ToString();
+                emailmecanico.Text = dt.Rows[0][2].ToString();
+                senhamecanico.Text = dt.Rows[0][3].ToString();
+                codmecanico.Text =  dt.Rows[0][4].ToString();
+                codcliente = codcliente;//Convert.ToInt32(textBox1.Text)
+            }
+        }
+
+        private void nomeoficina_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

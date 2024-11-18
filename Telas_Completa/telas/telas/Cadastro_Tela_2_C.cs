@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,8 +19,10 @@ namespace telas
         Cliente cliente = new Cliente();
         Clientecontrole1 clientecontrole = new Clientecontrole1();
         conexao conexao = new conexao();
-        public Cadastro_Tela_2_C()
+        int id_cliente = 0;
+        public Cadastro_Tela_2_C(int id)
         {
+            this.id_cliente = id;
             InitializeComponent();
         }
 

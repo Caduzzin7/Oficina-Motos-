@@ -24,7 +24,7 @@ namespace telas
                 //monto o vetor de atributos da tabela usuario
                 string[] campos = { "@nomeproduto", "@descricaogeral", "@anodapeca","@preco","@codigo_cliente"};
                 //monto o vetor com os valores do formulario
-                string[] valores = { produto.nomeproduto, produto.descricaogeral, produto.anodapeca, produto.precototal , produto.codigo_cliente};
+                string[] valores = { produto.nomeproduto, produto.descricaogeral, produto.anodapeca, produto.precototal , produto.cod_cliente.ToString()};
                 //testar o insert no banco de dados
                 if (con.cadastrar(0, campos, valores, sql) >= 1)
                 {

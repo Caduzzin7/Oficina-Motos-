@@ -22,7 +22,7 @@ namespace telas
 
         private void relatoriogeral_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = con.obterdados("select * from cliente inner join moto on moto.codigo_cliente=cliente.codcliente ");
+            dataGridView1.DataSource = con.obterdados("select cliente.nome,\r\n cliente.telefone,\r\n moto.marcamoto,\r\n moto.modelomoto,\r\n cadastroprodutos.nomeproduto,\r\n cliente.Codcliente,\r\n moto.Codmoto,\r\n cadastroprodutos.codcadprodutos\r\n from cadastroprodutos \r\n inner join cliente on cadastroprodutos.codigo_cliente = cliente.Codcliente\r\n inner join moto on cadastroprodutos.codigo_cliente = moto.codigo_cliente;");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

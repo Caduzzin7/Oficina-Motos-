@@ -20,7 +20,7 @@ namespace telas
             descricaogeral = "";
             anodapeca = "";
             precototal = "";
-        
+            cod_cliente = 0;
         }
     }
 }

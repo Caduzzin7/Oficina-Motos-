@@ -64,8 +64,8 @@ namespace telas
                     cmd.Parameters.AddWithValue("@id", codigo);
                 }
                 //executa o script sql
-                 cmd.ExecuteNonQuery();
-               registro =Convert.ToInt32(cmd.LastInsertedId);
+                 
+               registro = cmd.ExecuteNonQuery();
                 //fecha a conexao com o banco
                 conn.Close();
             }

@@ -153,6 +153,7 @@
             proximatela.TabIndex = 35;
             proximatela.Text = "ir para o relatorio:";
             proximatela.UseVisualStyleBackColor = true;
+            proximatela.Click += proximatela_Click;
             // 
             // button1
             // 
@@ -190,7 +191,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
-            ClientSize = new Size(941, 535);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(CbClint);
             Controls.Add(label9);
             Controls.Add(button1);

@@ -14,6 +14,7 @@ namespace telas
     public partial class menu_oficina : Form
 
     {
+        int id_cliente = 0;
         public menu_oficina()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace telas
         private void button1_Click_1(object sender, EventArgs e)
         {
             Hide();
-            Cadastro_Tela_2_C form = new Cadastro_Tela_2_C();
+            Cadastro_Tela_2_C form = new Cadastro_Tela_2_C(id_cliente);
             form.ShowDialog();
 
         }
@@ -41,7 +42,7 @@ namespace telas
         {
 
             Hide();
-            tela_senha_para_cadastro form = new tela_senha_para_cadastro();
+            tela_senha_para_cadastro form = new tela_senha_para_cadastro(id_cliente);
             form.ShowDialog();
         }
 
