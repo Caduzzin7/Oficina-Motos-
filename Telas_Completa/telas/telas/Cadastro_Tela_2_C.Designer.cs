@@ -274,6 +274,7 @@
             Controls.Add(label1);
             Name = "Cadastro_Tela_2_C";
             Text = "tela_2";
+            FormClosed += Cadastro_Tela_2_C_FormClosed;
             Load += Cadastro_Tela_2_C_Load;
             ResumeLayout(false);
             PerformLayout();

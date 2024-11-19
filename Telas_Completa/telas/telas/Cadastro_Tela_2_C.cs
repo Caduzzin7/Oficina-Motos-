@@ -176,10 +176,10 @@ namespace telas
             musuario.email = txtemail.Text;
 
             Clientecontrole1 cusuario = new Clientecontrole1();
-            
+
             DataTable dt_clint = cusuario.logar(musuario);
 
-            if (Convert.ToInt32(dt_clint.Rows[0]["Codcliente"])>0)
+            if (Convert.ToInt32(dt_clint.Rows[0]["Codcliente"]) > 0)
             {
                 MessageBox.Show("Acesso autorizado!");
 
@@ -206,6 +206,11 @@ namespace telas
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void Cadastro_Tela_2_C_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

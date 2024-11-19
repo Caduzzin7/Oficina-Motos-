@@ -47,6 +47,7 @@ namespace telas
             label9 = new Label();
             label5 = new Label();
             codmecanico = new TextBox();
+            button4 = new Button();
             SuspendLayout();
             // 
             // label7
@@ -214,12 +215,23 @@ namespace telas
             codmecanico.Size = new Size(298, 27);
             codmecanico.TabIndex = 33;
             // 
+            // button4
+            // 
+            button4.Location = new Point(852, 332);
+            button4.Name = "button4";
+            button4.Size = new Size(133, 29);
+            button4.TabIndex = 44;
+            button4.Text = "Atualizar";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // loginoficina
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(1108, 453);
+            Controls.Add(button4);
             Controls.Add(CbClint);
             Controls.Add(label9);
             Controls.Add(button2);
@@ -270,5 +282,6 @@ namespace telas
         private Label label9;
         private Label label5;
         private TextBox codmecanico;
+        private Button button4;
     }
 }

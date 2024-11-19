@@ -3,36 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|c:\\users\\cadu\\onedrive - fiep - federacao das industrias do estado do parana\\documents\\github\\oficina-motos-\\telas_completa\\telas\\telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\mecanicocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\mecanicocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\menu oficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\menu oficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\mecanico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\mecanico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CADU\\AppData\\Local\\Temp\\.vsdbgsrc\\6320b0c1616adaa2997089ddb9c89f115fa551c713111e194874d0083f2532d7\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\cadastro_tela_2_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\cadastro_tela_2_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\cadastro_tela_2_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\cadastro_tela_2_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\mecanicocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\mecanicocontrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|c:\\users\\cadu\\onedrive - fiep - federacao das industrias do estado do parana\\documents\\github\\oficina-motos-\\telas_completa\\telas\\telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\loginoficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\cadastro_tela_2_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\cadastro_tela_2_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\menu oficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1B4CF07-C2C1-4CD5-900E-2EF0786DF019}|telas\\telas.csproj|solutionrelative:telas\\menu oficina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +49,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "loginoficina.cs",
+              "DocumentMoniker": "C:\\Users\\CADU\\AppData\\Local\\Temp\\.vsdbgsrc\\6320b0c1616adaa2997089ddb9c89f115fa551c713111e194874d0083f2532d7\\loginoficina.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6320b0c1616adaa2997089ddb9c89f115fa551c713111e194874d0083f2532d7\\loginoficina.cs",
+              "ToolTip": "C:\\Users\\CADU\\AppData\\Local\\Temp\\.vsdbgsrc\\6320b0c1616adaa2997089ddb9c89f115fa551c713111e194874d0083f2532d7\\loginoficina.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6320b0c1616adaa2997089ddb9c89f115fa551c713111e194874d0083f2532d7\\loginoficina.cs [Somente Leitura]",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAwwJ4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T11:33:34.041Z",
+              "EditorCaption": " [Somente Leitura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "menu oficina.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\menu oficina.cs",
               "RelativeDocumentMoniker": "telas\\menu oficina.cs",
@@ -61,38 +73,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mecanico.cs",
-              "DocumentMoniker": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\mecanico.cs",
-              "RelativeDocumentMoniker": "telas\\mecanico.cs",
-              "ToolTip": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\mecanico.cs",
-              "RelativeToolTip": "telas\\mecanico.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:15:49.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Cadastro_Tela_2_C.cs",
               "DocumentMoniker": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\Cadastro_Tela_2_C.cs",
               "RelativeDocumentMoniker": "telas\\Cadastro_Tela_2_C.cs",
               "ToolTip": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\Cadastro_Tela_2_C.cs",
               "RelativeToolTip": "telas\\Cadastro_Tela_2_C.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKEAAAAjAAAA",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAAwNQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:57:59.327Z"
+              "WhenOpened": "2024-11-18T15:57:59.327Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Cadastro_Tela_2_C.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\Cadastro_Tela_2_C.cs",
               "RelativeDocumentMoniker": "telas\\Cadastro_Tela_2_C.cs",
               "ToolTip": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\Cadastro_Tela_2_C.cs [Projeto]",
               "RelativeToolTip": "telas\\Cadastro_Tela_2_C.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:57:56.757Z"
+              "WhenOpened": "2024-11-18T15:57:56.757Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
@@ -102,38 +104,40 @@
               "RelativeDocumentMoniker": "telas\\conexao.cs",
               "ToolTip": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\conexao.cs",
               "RelativeToolTip": "telas\\conexao.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAARAAAA",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAwwGYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:48:51.669Z"
+              "WhenOpened": "2024-11-18T15:48:51.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "mecanicocontrole.cs",
               "DocumentMoniker": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\mecanicocontrole.cs",
               "RelativeDocumentMoniker": "telas\\mecanicocontrole.cs",
               "ToolTip": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\mecanicocontrole.cs",
               "RelativeToolTip": "telas\\mecanicocontrole.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwBQAAAB5AAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAuwDoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:48:02.238Z"
+              "WhenOpened": "2024-11-18T15:48:02.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "loginoficina.cs",
               "DocumentMoniker": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\loginoficina.cs",
               "RelativeDocumentMoniker": "telas\\loginoficina.cs",
               "ToolTip": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\loginoficina.cs",
               "RelativeToolTip": "telas\\loginoficina.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAA+wJ4AAAABAAAA",
+              "ViewState": "AQIAAHIAAAAAAAAAAAA2wLkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T15:47:48.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "loginoficina.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\CADU\\OneDrive - FIEP - Federacao das Industrias do Estado do Parana\\Documents\\GitHub\\Oficina-Motos-\\Telas_Completa\\telas\\telas\\loginoficina.cs",
               "RelativeDocumentMoniker": "telas\\loginoficina.cs",

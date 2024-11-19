@@ -33,6 +33,12 @@ namespace telas
             CbClint.DisplayMember = "nomemecanico";
             CbClint.SelectedIndex = id_cliente - 1;
 
+            nomeoficina.Text = "";
+            nomemecanico.Text = "";
+            emailmecanico.Text = "";
+            senhamecanico.Text = "";
+            codmecanico.Text = "";
+
             //dataGridView1.DataSource = con.obterdados("select * from dadosrevisao");
         }
 
@@ -140,13 +146,13 @@ namespace telas
         {
             if (CbClint.SelectedIndex > -1)
             {
-                codcliente = Convert.ToInt32(((DataRowView) CbClint.SelectedItem)["Codcliente"]);
-                DataTable dt = con.obterdados("select * from cliente where codcliente=" + codcliente);
+                codcliente = Convert.ToInt32(((DataRowView)CbClint.SelectedItem)["codcadmecanico"]);
+                DataTable dt = con.obterdados("select * from cadastromecanico where codcadmecanico =" + codcliente);
                 nomeoficina.Text = dt.Rows[0][0].ToString();
                 nomemecanico.Text = dt.Rows[0][1].ToString();
                 emailmecanico.Text = dt.Rows[0][2].ToString();
                 senhamecanico.Text = dt.Rows[0][3].ToString();
-                codmecanico.Text =  dt.Rows[0][4].ToString();
+                codmecanico.Text = dt.Rows[0][4].ToString();
                 codcliente = codcliente;//Convert.ToInt32(textBox1.Text)
             }
         }
@@ -154,6 +160,30 @@ namespace telas
         private void nomeoficina_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+
+            //if (txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text != string.Empty)
+            //{
+            //    Hide();
+            //    Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
+            //    cmoto.ShowDialog();
+            //}
+            //else { MessageBox.Show("Faltou preencher todos os campos"); }
+
+            CbClint.DataSource = conexao.obterdados("select * from cliente");
+            CbClint.ValueMember = "codcadmecanico";
+            CbClint.DisplayMember = "nomemecanico";
+            CbClint.SelectedIndex = -1;
+
+            nomeoficina.Text = "";
+            nomemecanico.Text = "";
+            emailmecanico.Text = "";
+            senhamecanico.Text = "";
+            codmecanico.Text = "";
         }
     }
 }
