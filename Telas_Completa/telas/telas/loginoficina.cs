@@ -174,7 +174,7 @@ namespace telas
             //}
             //else { MessageBox.Show("Faltou preencher todos os campos"); }
 
-            CbClint.DataSource = conexao.obterdados("select * from cliente");
+            CbClint.DataSource = con.obterdados("select * from cliente");
             CbClint.ValueMember = "codcadmecanico";
             CbClint.DisplayMember = "nomemecanico";
             CbClint.SelectedIndex = -1;

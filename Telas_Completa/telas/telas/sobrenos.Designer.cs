@@ -42,7 +42,7 @@
             label8.Font = new Font("Sitka Small", 40F, FontStyle.Italic);
             label8.Location = new Point(197, 9);
             label8.Name = "label8";
-            label8.Size = new Size(384, 99);
+            label8.Size = new Size(384, 97);
             label8.TabIndex = 44;
             label8.Text = "Sobre nós ";
             label8.Click += label8_Click_1;
@@ -51,9 +51,9 @@
             // 
             button2.BackColor = Color.Transparent;
             button2.ForeColor = Color.Black;
-            button2.Location = new Point(31, 395);
+            button2.Location = new Point(12, 872);
             button2.Name = "button2";
-            button2.Size = new Size(98, 28);
+            button2.Size = new Size(364, 149);
             button2.TabIndex = 42;
             button2.Text = "Voltar Menu";
             button2.UseVisualStyleBackColor = false;
@@ -64,16 +64,17 @@
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.Location = new Point(55, 134);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(644, 196);
+            flowLayoutPanel1.Size = new Size(1254, 362);
             flowLayoutPanel1.TabIndex = 44;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 22F);
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(636, 180);
+            label2.Size = new Size(1248, 550);
             label2.TabIndex = 0;
             label2.Text = resources.GetString("label2.Text");
             // 
@@ -81,7 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(button2);
             Controls.Add(label8);

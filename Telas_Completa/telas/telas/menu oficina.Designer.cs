@@ -65,7 +65,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Stencil", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(130, 36);
+            label1.Location = new Point(490, 47);
             label1.Name = "label1";
             label1.Size = new Size(367, 47);
             label1.TabIndex = 39;
@@ -76,7 +76,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Stencil", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(151, -2);
+            label2.Location = new Point(511, 9);
             label2.Name = "label2";
             label2.Size = new Size(330, 47);
             label2.TabIndex = 40;
@@ -99,7 +99,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(683, 517);
+            ClientSize = new Size(1354, 843);
             Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(label1);

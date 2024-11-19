@@ -179,13 +179,16 @@ namespace telas
 
             DataTable dt_clint = cusuario.logar(musuario);
 
-            if (Convert.ToInt32(dt_clint.Rows[0]["Codcliente"]) > 0)
+            if(dt_clint.Rows.Count > 0)
             {
-                MessageBox.Show("Acesso autorizado!");
+                if (Convert.ToInt32(dt_clint.Rows[0]["Codcliente"]) > 0)
+                {
+                    MessageBox.Show("Acesso autorizado!");
 
-                Cadastromotocs moto = new Cadastromotocs(codcliente);
-                this.Hide();
-                moto.ShowDialog();
+                    Cadastromotocs moto = new Cadastromotocs(codcliente);
+                    this.Hide();
+                    moto.ShowDialog();
+                }
             }
             else
             {

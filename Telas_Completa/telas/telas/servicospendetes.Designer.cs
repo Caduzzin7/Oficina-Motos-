@@ -31,7 +31,7 @@
             label1 = new Label();
             dataGridView1 = new DataGridView();
             excluir = new Button();
-            button1 = new Button();
+            deletar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -51,30 +51,31 @@
             dataGridView1.Location = new Point(185, 107);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(436, 222);
+            dataGridView1.Size = new Size(1135, 595);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.Click += dataGridView1_Click;
             // 
             // excluir
             // 
-            excluir.Location = new Point(12, 409);
+            excluir.Location = new Point(12, 862);
             excluir.Name = "excluir";
-            excluir.Size = new Size(104, 29);
+            excluir.Size = new Size(311, 104);
             excluir.TabIndex = 31;
             excluir.Text = "Voltar Menu";
             excluir.UseVisualStyleBackColor = true;
             excluir.Click += excluir_Click;
             // 
-            // button1
+            // deletar
             // 
-            button1.Location = new Point(733, 177);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 32;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            deletar.Location = new Point(1347, 845);
+            deletar.Name = "deletar";
+            deletar.Size = new Size(389, 121);
+            deletar.TabIndex = 32;
+            deletar.Text = "deletar informaçoes";
+            deletar.UseVisualStyleBackColor = true;
+            deletar.Visible = false;
+            deletar.Click += button1_Click;
             // 
             // servicospendetes
             // 
@@ -82,7 +83,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1902, 1033);
-            Controls.Add(button1);
+            Controls.Add(deletar);
             Controls.Add(excluir);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
@@ -99,6 +100,6 @@
         private Label label1;
         private DataGridView dataGridView1;
         private Button excluir;
-        private Button button1;
+        private Button deletar;
     }
 }
