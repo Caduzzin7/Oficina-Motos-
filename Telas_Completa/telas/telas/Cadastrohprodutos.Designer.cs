@@ -49,7 +49,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Sitka Banner", 22.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label7.Location = new Point(704, 34);
+            label7.Location = new Point(497, 73);
             label7.Name = "label7";
             label7.Size = new Size(226, 53);
             label7.TabIndex = 20;
@@ -60,7 +60,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Sitka Small", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label8.Location = new Point(682, 96);
+            label8.Location = new Point(475, 135);
             label8.Name = "label8";
             label8.Size = new Size(194, 21);
             label8.TabIndex = 21;
@@ -69,7 +69,7 @@
             // descricaogeralproduto
             // 
             descricaogeralproduto.BackColor = Color.White;
-            descricaogeralproduto.Location = new Point(682, 235);
+            descricaogeralproduto.Location = new Point(475, 274);
             descricaogeralproduto.Name = "descricaogeralproduto";
             descricaogeralproduto.Size = new Size(292, 27);
             descricaogeralproduto.TabIndex = 24;
@@ -77,7 +77,7 @@
             // anodapeca
             // 
             anodapeca.BackColor = Color.White;
-            anodapeca.Location = new Point(682, 284);
+            anodapeca.Location = new Point(475, 323);
             anodapeca.Name = "anodapeca";
             anodapeca.Size = new Size(292, 27);
             anodapeca.TabIndex = 25;
@@ -85,7 +85,7 @@
             // precototal
             // 
             precototal.BackColor = Color.White;
-            precototal.Location = new Point(682, 328);
+            precototal.Location = new Point(475, 367);
             precototal.Name = "precototal";
             precototal.Size = new Size(292, 27);
             precototal.TabIndex = 26;
@@ -93,7 +93,7 @@
             // nomedoproduto
             // 
             nomedoproduto.BackColor = Color.White;
-            nomedoproduto.Location = new Point(682, 193);
+            nomedoproduto.Location = new Point(475, 232);
             nomedoproduto.Name = "nomedoproduto";
             nomedoproduto.Size = new Size(292, 27);
             nomedoproduto.TabIndex = 27;
@@ -102,7 +102,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(544, 331);
+            label4.Location = new Point(337, 370);
             label4.Name = "label4";
             label4.Size = new Size(86, 20);
             label4.TabIndex = 28;
@@ -111,7 +111,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(544, 287);
+            label1.Location = new Point(337, 326);
             label1.Name = "label1";
             label1.Size = new Size(94, 20);
             label1.TabIndex = 29;
@@ -120,7 +120,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(544, 238);
+            label2.Location = new Point(337, 277);
             label2.Name = "label2";
             label2.Size = new Size(109, 20);
             label2.TabIndex = 30;
@@ -129,7 +129,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(544, 200);
+            label3.Location = new Point(337, 239);
             label3.Name = "label3";
             label3.Size = new Size(116, 20);
             label3.TabIndex = 31;
@@ -137,7 +137,7 @@
             // 
             // cadastrar
             // 
-            cadastrar.Location = new Point(820, 423);
+            cadastrar.Location = new Point(613, 462);
             cadastrar.Name = "cadastrar";
             cadastrar.Size = new Size(134, 29);
             cadastrar.TabIndex = 32;
@@ -147,7 +147,7 @@
             // 
             // proximatela
             // 
-            proximatela.Location = new Point(987, 423);
+            proximatela.Location = new Point(780, 462);
             proximatela.Name = "proximatela";
             proximatela.Size = new Size(141, 29);
             proximatela.TabIndex = 35;
@@ -157,7 +157,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(555, 423);
+            button1.Location = new Point(348, 462);
             button1.Name = "button1";
             button1.Size = new Size(64, 29);
             button1.TabIndex = 36;
@@ -169,7 +169,7 @@
             // 
             CbClint.FormattingEnabled = true;
             CbClint.Items.AddRange(new object[] { "0" });
-            CbClint.Location = new Point(1204, 59);
+            CbClint.Location = new Point(997, 98);
             CbClint.Name = "CbClint";
             CbClint.Size = new Size(102, 28);
             CbClint.TabIndex = 41;
@@ -179,7 +179,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(1046, 59);
+            label9.Location = new Point(839, 98);
             label9.Name = "label9";
             label9.Size = new Size(118, 23);
             label9.TabIndex = 40;

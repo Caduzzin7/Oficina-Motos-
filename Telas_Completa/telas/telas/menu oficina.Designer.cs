@@ -66,11 +66,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Stencil", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(490, 47);
+            label1.Location = new Point(367, 56);
             label1.Name = "label1";
-            label1.Size = new Size(367, 47);
+            label1.Size = new Size(607, 47);
             label1.TabIndex = 39;
-            label1.Text = "oficina MyMotos";
+            label1.Text = "central de oficina MyMotos";
             label1.Click += label1_Click;
             // 
             // label2

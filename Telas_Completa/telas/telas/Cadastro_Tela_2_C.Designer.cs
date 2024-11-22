@@ -54,7 +54,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Stencil", 24F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(619, 32);
+            label1.Location = new Point(380, 28);
             label1.Name = "label1";
             label1.Size = new Size(395, 47);
             label1.TabIndex = 0;
@@ -65,7 +65,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10.2F);
-            label2.Location = new Point(711, 123);
+            label2.Location = new Point(472, 119);
             label2.Name = "label2";
             label2.Size = new Size(219, 20);
             label2.TabIndex = 1;
@@ -75,7 +75,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10.2F);
-            label3.Location = new Point(529, 183);
+            label3.Location = new Point(290, 179);
             label3.Name = "label3";
             label3.Size = new Size(131, 20);
             label3.TabIndex = 2;
@@ -83,7 +83,7 @@
             // 
             // txtnome
             // 
-            txtnome.Location = new Point(684, 176);
+            txtnome.Location = new Point(445, 172);
             txtnome.Name = "txtnome";
             txtnome.Size = new Size(292, 27);
             txtnome.TabIndex = 3;
@@ -93,7 +93,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10.2F);
-            label4.Location = new Point(598, 322);
+            label4.Location = new Point(359, 318);
             label4.Name = "label4";
             label4.Size = new Size(62, 20);
             label4.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             // txtemail
             // 
-            txtemail.Location = new Point(684, 315);
+            txtemail.Location = new Point(445, 311);
             txtemail.Name = "txtemail";
             txtemail.Size = new Size(292, 27);
             txtemail.TabIndex = 5;
@@ -111,7 +111,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 10.2F);
-            label5.Location = new Point(496, 254);
+            label5.Location = new Point(257, 250);
             label5.Name = "label5";
             label5.Size = new Size(164, 20);
             label5.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             // txttelefone
             // 
-            txttelefone.Location = new Point(684, 247);
+            txttelefone.Location = new Point(445, 243);
             txttelefone.Name = "txttelefone";
             txttelefone.Size = new Size(292, 27);
             txttelefone.TabIndex = 7;
@@ -128,7 +128,7 @@
             // button1
             // 
             button1.BackColor = Color.FloralWhite;
-            button1.Location = new Point(1044, 595);
+            button1.Location = new Point(805, 591);
             button1.Name = "button1";
             button1.Size = new Size(110, 29);
             button1.TabIndex = 8;
@@ -138,7 +138,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(768, 595);
+            button2.Location = new Point(529, 591);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 9;
@@ -148,7 +148,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(920, 595);
+            button3.Location = new Point(681, 591);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 10;
@@ -157,7 +157,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(1179, 595);
+            button4.Location = new Point(940, 591);
             button4.Name = "button4";
             button4.Size = new Size(133, 29);
             button4.TabIndex = 11;
@@ -178,7 +178,7 @@
             // textBox1
             // 
             textBox1.Enabled = false;
-            textBox1.Location = new Point(684, 380);
+            textBox1.Location = new Point(445, 376);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(292, 27);
             textBox1.TabIndex = 16;
@@ -189,7 +189,7 @@
             label6.AutoSize = true;
             label6.Enabled = false;
             label6.Font = new Font("Microsoft Sans Serif", 10.2F);
-            label6.Location = new Point(542, 383);
+            label6.Location = new Point(303, 379);
             label6.Name = "label6";
             label6.Size = new Size(123, 20);
             label6.TabIndex = 15;
@@ -199,7 +199,7 @@
             // 
             pesquisacliente.FormattingEnabled = true;
             pesquisacliente.Items.AddRange(new object[] { "0" });
-            pesquisacliente.Location = new Point(1177, 93);
+            pesquisacliente.Location = new Point(938, 89);
             pesquisacliente.Name = "pesquisacliente";
             pesquisacliente.Size = new Size(102, 28);
             pesquisacliente.TabIndex = 17;
@@ -210,7 +210,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(1024, 93);
+            label7.Location = new Point(785, 89);
             label7.Name = "label7";
             label7.Size = new Size(117, 23);
             label7.TabIndex = 18;
@@ -220,7 +220,7 @@
             // txtsenha
             // 
             txtsenha.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            txtsenha.Location = new Point(1177, 144);
+            txtsenha.Location = new Point(938, 140);
             txtsenha.Name = "txtsenha";
             txtsenha.Size = new Size(102, 27);
             txtsenha.TabIndex = 20;
@@ -230,7 +230,7 @@
             label8.AutoSize = true;
             label8.Enabled = false;
             label8.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(1045, 151);
+            label8.Location = new Point(806, 147);
             label8.Name = "label8";
             label8.Size = new Size(61, 20);
             label8.TabIndex = 19;
@@ -238,7 +238,7 @@
             // 
             // btnlogin
             // 
-            btnlogin.Location = new Point(684, 458);
+            btnlogin.Location = new Point(445, 454);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(292, 96);
             btnlogin.TabIndex = 21;

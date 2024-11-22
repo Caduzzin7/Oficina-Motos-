@@ -164,26 +164,26 @@ namespace telas
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-
-            //if (txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text != string.Empty)
-            //{
-            //    Hide();
-            //    Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
-            //    cmoto.ShowDialog();
-            //}
-            //else { MessageBox.Show("Faltou preencher todos os campos"); }
-
-            CbClint.DataSource = con.obterdados("select * from cliente");
+            CbClint.DataSource = con.obterdados("select * from cadastromecanico");
             CbClint.ValueMember = "codcadmecanico";
             CbClint.DisplayMember = "nomemecanico";
             CbClint.SelectedIndex = -1;
 
-            nomeoficina.Text = "";
-            nomemecanico.Text = "";
-            emailmecanico.Text = "";
-            senhamecanico.Text = "";
-            codmecanico.Text = "";
+            label3.Text = "";
+            label1.Text = "";
+            label2.Text = "";
+            label4.Text = "";
+            label5.Text = "";
+        }
+
+        //if (txtnome.Text != string.Empty && txtemail.Text != string.Empty && txtsenha.Text != string.Empty && txttelefone.Text != string.Empty && textBox1.Text != string.Empty)
+        //{
+        //    Hide();
+        //    Cadastromotocs cmoto = new Cadastromotocs(cliente.cod_usuario);
+        //    cmoto.ShowDialog();
+        //}
+        //else { MessageBox.Show("Faltou preencher todos os campos"); }
+
         }
     }
-}
+

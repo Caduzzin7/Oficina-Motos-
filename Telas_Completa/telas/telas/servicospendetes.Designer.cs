@@ -38,6 +38,7 @@
             clintmoto = new Label();
             clintname = new Label();
             serv_Pend = new Label();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(40, 39);
+            label1.Location = new Point(57, 27);
             label1.Name = "label1";
             label1.Size = new Size(381, 37);
             label1.TabIndex = 0;
@@ -54,7 +55,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(40, 97);
+            dataGridView1.Location = new Point(57, 199);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(842, 283);
@@ -64,7 +65,7 @@
             // 
             // excluir
             // 
-            excluir.Location = new Point(40, 432);
+            excluir.Location = new Point(40, 508);
             excluir.Name = "excluir";
             excluir.Size = new Size(237, 67);
             excluir.TabIndex = 31;
@@ -74,7 +75,7 @@
             // 
             // deletar
             // 
-            deletar.Location = new Point(644, 432);
+            deletar.Location = new Point(644, 508);
             deletar.Name = "deletar";
             deletar.Size = new Size(238, 67);
             deletar.TabIndex = 32;
@@ -107,7 +108,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
-            label4.Location = new Point(888, 232);
+            label4.Location = new Point(904, 232);
             label4.Name = "label4";
             label4.Size = new Size(315, 37);
             label4.TabIndex = 35;
@@ -140,12 +141,23 @@
             serv_Pend.TabIndex = 38;
             serv_Pend.Text = "label5";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(57, 128);
+            label5.Name = "label5";
+            label5.Size = new Size(548, 23);
+            label5.TabIndex = 39;
+            label5.Text = "Selecione o serviço desejado clicando na primeira coluna da tabela:";
+            // 
             // servicospendetes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1333, 649);
+            Controls.Add(label5);
             Controls.Add(serv_Pend);
             Controls.Add(clintmoto);
             Controls.Add(clintname);
@@ -176,5 +188,6 @@
         private Label clintmoto;
         private Label clintname;
         private Label serv_Pend;
+        private Label label5;
     }
 }

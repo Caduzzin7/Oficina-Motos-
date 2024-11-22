@@ -48,8 +48,6 @@ namespace telas
             label5 = new Label();
             codmecanico = new TextBox();
             button4 = new Button();
-            txtsenha = new TextBox();
-            label8 = new Label();
             SuspendLayout();
             // 
             // label7
@@ -173,7 +171,7 @@ namespace telas
             // 
             // button2
             // 
-            button2.Location = new Point(189, 412);
+            button2.Location = new Point(189, 392);
             button2.Name = "button2";
             button2.Size = new Size(99, 29);
             button2.TabIndex = 35;
@@ -212,6 +210,7 @@ namespace telas
             // 
             // codmecanico
             // 
+            codmecanico.Enabled = false;
             codmecanico.Location = new Point(344, 342);
             codmecanico.Name = "codmecanico";
             codmecanico.Size = new Size(298, 27);
@@ -227,33 +226,12 @@ namespace telas
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // txtsenha
-            // 
-            txtsenha.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            txtsenha.Location = new Point(921, 124);
-            txtsenha.Name = "txtsenha";
-            txtsenha.Size = new Size(102, 27);
-            txtsenha.TabIndex = 46;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Enabled = false;
-            label8.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(789, 131);
-            label8.Name = "label8";
-            label8.Size = new Size(67, 20);
-            label8.TabIndex = 45;
-            label8.Text = "Senha:";
-            // 
             // loginoficina
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.HotTrack;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(1333, 649);
-            Controls.Add(txtsenha);
-            Controls.Add(label8);
             Controls.Add(button4);
             Controls.Add(CbClint);
             Controls.Add(label9);
@@ -306,7 +284,5 @@ namespace telas
         private Label label5;
         private TextBox codmecanico;
         private Button button4;
-        private TextBox txtsenha;
-        private Label label8;
     }
 }

@@ -99,11 +99,12 @@ namespace telas
             con.excluir(0, $"DELETE FROM moto where codigo_cliente = {row.Cells[6].Value} AND marcamoto = '{row.Cells[2].Value}'"); //moto cliente produto 
             con.excluir(0, $"DELETE FROM cadastroprodutos where codigo_cliente = {row.Cells[6].Value} AND nomeproduto = '{row.Cells[3].Value}'");
             //nomeproduto
-            CarregarDadosRevisao();
+            
 
             //aqui ele leva para a tela com o produto expecifico = index
 
-            MessageBox.Show("Mecânico selecionou serviço com sucesso!"); 
+            MessageBox.Show("Mecânico selecionou serviço com sucesso!");
+            CarregarDadosRevisao();
         }
     }
 }
