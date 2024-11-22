@@ -43,5 +43,15 @@ namespace telas
         {
 
         }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sobrenos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

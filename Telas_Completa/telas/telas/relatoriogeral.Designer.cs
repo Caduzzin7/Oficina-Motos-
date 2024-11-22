@@ -37,7 +37,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(531, 22);
+            label1.Location = new Point(781, 75);
             label1.Name = "label1";
             label1.Size = new Size(277, 37);
             label1.TabIndex = 0;
@@ -46,10 +46,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(91, 81);
+            dataGridView1.Location = new Point(531, 169);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1219, 404);
+            dataGridView1.Size = new Size(767, 404);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -58,7 +58,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1333, 649);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "relatoriogeral";

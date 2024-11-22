@@ -70,24 +70,29 @@
             // 
             // label2
             // 
+            label2.AutoEllipsis = true;
             label2.AutoSize = true;
+            label2.BackColor = SystemColors.Control;
             label2.Font = new Font("Segoe UI", 22F);
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(1248, 550);
+            label2.Size = new Size(1236, 350);
             label2.TabIndex = 0;
             label2.Text = resources.GetString("label2.Text");
+            label2.Click += label2_Click_1;
             // 
             // sobrenos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1902, 1033);
+            BackgroundImage = Properties.Resources.Imagem_moto_1234;
+            ClientSize = new Size(1333, 649);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(button2);
             Controls.Add(label8);
             Name = "sobrenos";
             Text = "sobrenos";
+            Load += sobrenos_Load;
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             ResumeLayout(false);

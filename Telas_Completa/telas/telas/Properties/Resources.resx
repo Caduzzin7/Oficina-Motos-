@@ -121,4 +121,7 @@
   <data name="TRIUMPH_2023_LA_SMX_OCTOPI_DSC9572.NEF_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TRIUMPH_2023_LA_SMX_OCTOPI_DSC9572.NEF_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Imagem moto 1234" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagem moto 1234.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

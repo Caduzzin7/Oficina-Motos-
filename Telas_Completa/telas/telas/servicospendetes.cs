@@ -16,6 +16,7 @@ namespace telas
         int index = 0;
         int id_cliente = 0;
         DataTable dt_pedido= new DataTable();
+        DataGridViewRow row = new DataGridViewRow();
         string serv;
         public servicospendetes(int id)
         {
@@ -75,7 +76,7 @@ namespace telas
             if (dvg.Rows.Count > 0 && dvg.CurrentCell.RowIndex > 0)
             {
                 index = dvg.CurrentCell.RowIndex;
-                DataGridViewRow row = dvg.Rows[index];
+                row = dvg.Rows[index];
 
                 label1.Text = row.Cells[0].Value.ToString();
                 
@@ -92,13 +93,16 @@ namespace telas
 
             }
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-
+            con.excluir(0, $"DELETE FROM moto where codigo_cliente = {row.Cells[6].Value} AND marcamoto = '{row.Cells[2].Value}'"); //moto cliente produto 
+            con.excluir(0, $"DELETE FROM cadastroprodutos where codigo_cliente = {row.Cells[6].Value} AND nomeproduto = '{row.Cells[3].Value}'");
+            //nomeproduto
+            CarregarDadosRevisao();
 
             //aqui ele leva para a tela com o produto expecifico = index
-            
+
             MessageBox.Show("Mecânico selecionou serviço com sucesso!"); 
         }
     }

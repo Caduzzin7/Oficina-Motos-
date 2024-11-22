@@ -45,7 +45,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(210, 42);
+            label1.Location = new Point(40, 39);
             label1.Name = "label1";
             label1.Size = new Size(381, 37);
             label1.TabIndex = 0;
@@ -54,17 +54,17 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(185, 107);
+            dataGridView1.Location = new Point(40, 97);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(842, 433);
+            dataGridView1.Size = new Size(842, 283);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.Click += dataGridView1_Click;
             // 
             // excluir
             // 
-            excluir.Location = new Point(81, 591);
+            excluir.Location = new Point(40, 432);
             excluir.Name = "excluir";
             excluir.Size = new Size(237, 67);
             excluir.TabIndex = 31;
@@ -74,7 +74,7 @@
             // 
             // deletar
             // 
-            deletar.Location = new Point(809, 591);
+            deletar.Location = new Point(644, 432);
             deletar.Name = "deletar";
             deletar.Size = new Size(238, 67);
             deletar.TabIndex = 32;
@@ -87,7 +87,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
-            label2.Location = new Point(1168, 211);
+            label2.Location = new Point(966, 128);
             label2.Name = "label2";
             label2.Size = new Size(237, 37);
             label2.TabIndex = 33;
@@ -97,7 +97,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
-            label3.Location = new Point(1165, 267);
+            label3.Location = new Point(963, 184);
             label3.Name = "label3";
             label3.Size = new Size(240, 37);
             label3.TabIndex = 34;
@@ -107,7 +107,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
-            label4.Location = new Point(1090, 315);
+            label4.Location = new Point(888, 232);
             label4.Name = "label4";
             label4.Size = new Size(315, 37);
             label4.TabIndex = 35;
@@ -116,7 +116,7 @@
             // clintmoto
             // 
             clintmoto.AutoSize = true;
-            clintmoto.Location = new Point(1427, 282);
+            clintmoto.Location = new Point(1225, 199);
             clintmoto.Name = "clintmoto";
             clintmoto.Size = new Size(50, 20);
             clintmoto.TabIndex = 37;
@@ -125,7 +125,7 @@
             // clintname
             // 
             clintname.AutoSize = true;
-            clintname.Location = new Point(1427, 226);
+            clintname.Location = new Point(1225, 143);
             clintname.Name = "clintname";
             clintname.Size = new Size(50, 20);
             clintname.TabIndex = 36;
@@ -134,7 +134,7 @@
             // serv_Pend
             // 
             serv_Pend.AutoSize = true;
-            serv_Pend.Location = new Point(1427, 330);
+            serv_Pend.Location = new Point(1225, 247);
             serv_Pend.Name = "serv_Pend";
             serv_Pend.Size = new Size(50, 20);
             serv_Pend.TabIndex = 38;
@@ -145,7 +145,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1333, 649);
             Controls.Add(serv_Pend);
             Controls.Add(clintmoto);
             Controls.Add(clintname);

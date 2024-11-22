@@ -63,6 +63,16 @@ namespace telas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagem_moto_1234 {
+            get {
+                object obj = ResourceManager.GetObject("Imagem moto 1234", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TRIUMPH_2023_LA_SMX_OCTOPI_DSC9572_NEF_ {
             get {
                 object obj = ResourceManager.GetObject("TRIUMPH_2023_LA_SMX_OCTOPI_DSC9572.NEF_", resourceCulture);

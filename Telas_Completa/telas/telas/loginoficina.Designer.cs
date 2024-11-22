@@ -48,6 +48,8 @@ namespace telas
             label5 = new Label();
             codmecanico = new TextBox();
             button4 = new Button();
+            txtsenha = new TextBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label7
@@ -65,18 +67,18 @@ namespace telas
             label1.AutoSize = true;
             label1.Location = new Point(163, 175);
             label1.Name = "label1";
-            label1.Size = new Size(118, 20);
+            label1.Size = new Size(121, 20);
             label1.TabIndex = 23;
-            label1.Text = "Nome Mecânico";
+            label1.Text = "Nome Mecânico:";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(163, 124);
             label3.Name = "label3";
-            label3.Size = new Size(122, 20);
+            label3.Size = new Size(125, 20);
             label3.TabIndex = 22;
-            label3.Text = "Nome da Oficina";
+            label3.Text = "Nome da Oficina:";
             label3.Click += label3_Click;
             // 
             // nomemecanico
@@ -101,9 +103,9 @@ namespace telas
             label2.AutoSize = true;
             label2.Location = new Point(163, 230);
             label2.Name = "label2";
-            label2.Size = new Size(114, 20);
+            label2.Size = new Size(117, 20);
             label2.TabIndex = 25;
-            label2.Text = "email mecânico";
+            label2.Text = "Email mecânico:";
             // 
             // emailmecanico
             // 
@@ -118,9 +120,9 @@ namespace telas
             label4.AutoSize = true;
             label4.Location = new Point(163, 292);
             label4.Name = "label4";
-            label4.Size = new Size(117, 20);
+            label4.Size = new Size(120, 20);
             label4.TabIndex = 27;
-            label4.Text = "Senha Mecânico";
+            label4.Text = "Senha Mecânico:";
             // 
             // senhamecanico
             // 
@@ -171,7 +173,7 @@ namespace telas
             // 
             // button2
             // 
-            button2.Location = new Point(12, 412);
+            button2.Location = new Point(189, 412);
             button2.Name = "button2";
             button2.Size = new Size(99, 29);
             button2.TabIndex = 35;
@@ -195,18 +197,18 @@ namespace telas
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.Location = new Point(763, 55);
             label9.Name = "label9";
-            label9.Size = new Size(96, 23);
+            label9.Size = new Size(118, 23);
             label9.TabIndex = 42;
-            label9.Text = "cad rapido";
+            label9.Text = "Login rápido:";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(163, 341);
             label5.Name = "label5";
-            label5.Size = new Size(127, 20);
+            label5.Size = new Size(129, 20);
             label5.TabIndex = 32;
-            label5.Text = "codigo mecanico:";
+            label5.Text = "Código Mecânico:";
             // 
             // codmecanico
             // 
@@ -225,12 +227,33 @@ namespace telas
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // txtsenha
+            // 
+            txtsenha.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txtsenha.Location = new Point(921, 124);
+            txtsenha.Name = "txtsenha";
+            txtsenha.Size = new Size(102, 27);
+            txtsenha.TabIndex = 46;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Enabled = false;
+            label8.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(789, 131);
+            label8.Name = "label8";
+            label8.Size = new Size(67, 20);
+            label8.TabIndex = 45;
+            label8.Text = "Senha:";
+            // 
             // loginoficina
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
-            ClientSize = new Size(1108, 453);
+            ClientSize = new Size(1333, 649);
+            Controls.Add(txtsenha);
+            Controls.Add(label8);
             Controls.Add(button4);
             Controls.Add(CbClint);
             Controls.Add(label9);
@@ -283,5 +306,7 @@ namespace telas
         private Label label5;
         private TextBox codmecanico;
         private Button button4;
+        private TextBox txtsenha;
+        private Label label8;
     }
 }
