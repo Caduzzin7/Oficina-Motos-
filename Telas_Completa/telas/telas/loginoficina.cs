@@ -131,7 +131,7 @@ namespace telas
         private void button1_Click_1(object sender, EventArgs e)
         {
             Hide();
-            servicospendetes form = new servicospendetes(id_cliente);
+            servicospendetes form = new servicospendetes(CbClint.SelectedIndex+1);
             form.ShowDialog();
         }
 

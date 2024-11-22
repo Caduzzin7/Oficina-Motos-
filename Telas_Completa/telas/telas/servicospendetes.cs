@@ -12,9 +12,11 @@ namespace telas
 {
     public partial class servicospendetes : Form
     {
-        conexao conexao = new conexao();
+        conexao con = new conexao();
         int index = 0;
         int id_cliente = 0;
+        DataTable dt_pedido= new DataTable();
+        string serv;
         public servicospendetes(int id)
         {
             this.id_cliente = id;
@@ -30,7 +32,7 @@ namespace telas
 
                 // Chamando o método obterdados da classe conexao
                 DataTable dt = new DataTable();
-                dt = conexao.obterdados(query);
+                dt = con.obterdados(query);
 
                 // Atribuindo o DataTable como fonte de dados do DataGridView
                 dataGridView1.DataSource = dt;
@@ -58,6 +60,10 @@ namespace telas
         private void servicospendetes_Load(object sender, EventArgs e)
         {
             CarregarDadosRevisao();
+            DataTable dt_mec = con.obterdados($"select * from cadastromecanico where codcadmecanico = {id_cliente}");
+            String NomeMec = dt_mec.Rows[0]["nomemecanico"].ToString();
+            string Nomeofc = dt_mec.Rows[0]["nomeooficina"].ToString();
+          
 
         }
 
@@ -66,17 +72,34 @@ namespace telas
             DataGridView dvg = (DataGridView)sender;
             //Check first if datagridview has data and
             //Check if you are selecting a valid row
-            // if (dvg.Rows.Count > 0 && dvg.CurrentCell.RowIndex > 0)
-            //{
-            index = dvg.CurrentCell.RowIndex;
+            if (dvg.Rows.Count > 0 && dvg.CurrentCell.RowIndex > 0)
+            {
+                index = dvg.CurrentCell.RowIndex;
+                DataGridViewRow row = dvg.Rows[index];
 
+                label1.Text = row.Cells[0].Value.ToString();
+                
+                clintname.Text=row.Cells[0].Value.ToString();
+                serv = row.Cells[6].Value.ToString();
+                clintmoto.Text= row.Cells[2].Value.ToString();
+                dt_pedido = con.obterdados($"select * from cadastroprodutos where codcadprodutos={serv}");
+
+                serv_Pend.Text = dt_pedido.Rows[0]["descricaogeral"].ToString();
+
+
+                deletar.Visible = true; 
+
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
 
             //aqui ele leva para a tela com o produto expecifico = index
+            
+            MessageBox.Show("Mecânico selecionou serviço com sucesso!"); 
         }
     }
 }

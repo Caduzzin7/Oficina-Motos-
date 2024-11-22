@@ -32,6 +32,12 @@
             dataGridView1 = new DataGridView();
             excluir = new Button();
             deletar = new Button();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            clintmoto = new Label();
+            clintname = new Label();
+            serv_Pend = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -51,16 +57,16 @@
             dataGridView1.Location = new Point(185, 107);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1135, 595);
+            dataGridView1.Size = new Size(842, 433);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.Click += dataGridView1_Click;
             // 
             // excluir
             // 
-            excluir.Location = new Point(12, 862);
+            excluir.Location = new Point(81, 591);
             excluir.Name = "excluir";
-            excluir.Size = new Size(311, 104);
+            excluir.Size = new Size(237, 67);
             excluir.TabIndex = 31;
             excluir.Text = "Voltar Menu";
             excluir.UseVisualStyleBackColor = true;
@@ -68,14 +74,71 @@
             // 
             // deletar
             // 
-            deletar.Location = new Point(1347, 845);
+            deletar.Location = new Point(809, 591);
             deletar.Name = "deletar";
-            deletar.Size = new Size(389, 121);
+            deletar.Size = new Size(238, 67);
             deletar.TabIndex = 32;
-            deletar.Text = "deletar informaçoes";
+            deletar.Text = "Pegar serviço";
             deletar.UseVisualStyleBackColor = true;
             deletar.Visible = false;
             deletar.Click += button1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
+            label2.Location = new Point(1168, 211);
+            label2.Name = "label2";
+            label2.Size = new Size(237, 37);
+            label2.TabIndex = 33;
+            label2.Text = "Nome Cliente";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
+            label3.Location = new Point(1165, 267);
+            label3.Name = "label3";
+            label3.Size = new Size(240, 37);
+            label3.TabIndex = 34;
+            label3.Text = "Moto Cliente";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
+            label4.Location = new Point(1090, 315);
+            label4.Name = "label4";
+            label4.Size = new Size(315, 37);
+            label4.TabIndex = 35;
+            label4.Text = "Serviço Pendente";
+            // 
+            // clintmoto
+            // 
+            clintmoto.AutoSize = true;
+            clintmoto.Location = new Point(1427, 282);
+            clintmoto.Name = "clintmoto";
+            clintmoto.Size = new Size(50, 20);
+            clintmoto.TabIndex = 37;
+            clintmoto.Text = "label6";
+            // 
+            // clintname
+            // 
+            clintname.AutoSize = true;
+            clintname.Location = new Point(1427, 226);
+            clintname.Name = "clintname";
+            clintname.Size = new Size(50, 20);
+            clintname.TabIndex = 36;
+            clintname.Text = "label7";
+            // 
+            // serv_Pend
+            // 
+            serv_Pend.AutoSize = true;
+            serv_Pend.Location = new Point(1427, 330);
+            serv_Pend.Name = "serv_Pend";
+            serv_Pend.Size = new Size(50, 20);
+            serv_Pend.TabIndex = 38;
+            serv_Pend.Text = "label5";
             // 
             // servicospendetes
             // 
@@ -83,6 +146,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(serv_Pend);
+            Controls.Add(clintmoto);
+            Controls.Add(clintname);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(deletar);
             Controls.Add(excluir);
             Controls.Add(dataGridView1);
@@ -101,5 +170,11 @@
         private DataGridView dataGridView1;
         private Button excluir;
         private Button deletar;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label clintmoto;
+        private Label clintname;
+        private Label serv_Pend;
     }
 }
