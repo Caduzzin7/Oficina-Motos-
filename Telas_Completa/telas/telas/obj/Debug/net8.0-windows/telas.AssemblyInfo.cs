@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("telas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caef262bbe836af870476ea2c6eeb69c52fe8f0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb07c95668ed3103625f82fa0f64955dfef1b284")]
 [assembly: System.Reflection.AssemblyProductAttribute("telas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("telas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
