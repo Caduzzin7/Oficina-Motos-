@@ -40,9 +40,9 @@
             label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(529, 75);
             label1.Name = "label1";
-            label1.Size = new Size(277, 37);
+            label1.Size = new Size(287, 37);
             label1.TabIndex = 0;
-            label1.Text = "Relatorio Final ";
+            label1.Text = "Relatório Final: ";
             // 
             // dataGridView1
             // 
