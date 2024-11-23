@@ -29,5 +29,13 @@ namespace telas
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Cadastro_Tela_2_C form = new Cadastro_Tela_2_C(id_cliente);
+            form.ShowDialog();
+        }
     }
-}
+    }
+

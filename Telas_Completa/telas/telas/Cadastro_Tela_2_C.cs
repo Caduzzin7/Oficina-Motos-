@@ -179,7 +179,7 @@ namespace telas
 
             DataTable dt_clint = cusuario.logar(musuario);
 
-            if(dt_clint.Rows.Count > 0)
+            if (dt_clint.Rows.Count > 0)
             {
                 if (Convert.ToInt32(dt_clint.Rows[0]["Codcliente"]) > 0)
                 {
@@ -214,6 +214,11 @@ namespace telas
         private void Cadastro_Tela_2_C_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtsenha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

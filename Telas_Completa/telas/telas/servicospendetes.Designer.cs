@@ -58,7 +58,7 @@
             dataGridView1.Location = new Point(57, 199);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(842, 283);
+            dataGridView1.Size = new Size(795, 283);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.Click += dataGridView1_Click;
@@ -75,7 +75,7 @@
             // 
             // deletar
             // 
-            deletar.Location = new Point(644, 508);
+            deletar.Location = new Point(614, 508);
             deletar.Name = "deletar";
             deletar.Size = new Size(238, 67);
             deletar.TabIndex = 32;
@@ -88,7 +88,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
-            label2.Location = new Point(966, 128);
+            label2.Location = new Point(858, 114);
             label2.Name = "label2";
             label2.Size = new Size(237, 37);
             label2.TabIndex = 33;
@@ -98,7 +98,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
-            label3.Location = new Point(963, 184);
+            label3.Location = new Point(858, 165);
             label3.Name = "label3";
             label3.Size = new Size(240, 37);
             label3.TabIndex = 34;
@@ -108,7 +108,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold);
-            label4.Location = new Point(904, 232);
+            label4.Location = new Point(858, 213);
             label4.Name = "label4";
             label4.Size = new Size(315, 37);
             label4.TabIndex = 35;
@@ -117,16 +117,17 @@
             // clintmoto
             // 
             clintmoto.AutoSize = true;
-            clintmoto.Location = new Point(1225, 199);
+            clintmoto.Location = new Point(1104, 182);
             clintmoto.Name = "clintmoto";
             clintmoto.Size = new Size(50, 20);
             clintmoto.TabIndex = 37;
             clintmoto.Text = "label6";
+            clintmoto.Click += clintmoto_Click;
             // 
             // clintname
             // 
             clintname.AutoSize = true;
-            clintname.Location = new Point(1225, 143);
+            clintname.Location = new Point(1104, 128);
             clintname.Name = "clintname";
             clintname.Size = new Size(50, 20);
             clintname.TabIndex = 36;
@@ -135,7 +136,7 @@
             // serv_Pend
             // 
             serv_Pend.AutoSize = true;
-            serv_Pend.Location = new Point(1225, 247);
+            serv_Pend.Location = new Point(1179, 228);
             serv_Pend.Name = "serv_Pend";
             serv_Pend.Size = new Size(50, 20);
             serv_Pend.TabIndex = 38;

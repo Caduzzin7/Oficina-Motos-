@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -53,12 +54,23 @@
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // button1
+            // 
+            button1.Location = new Point(1083, 582);
+            button1.Name = "button1";
+            button1.Size = new Size(210, 39);
+            button1.TabIndex = 2;
+            button1.Text = "Volta ao Menu";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // relatoriogeral
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
             ClientSize = new Size(1333, 649);
+            Controls.Add(button1);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Name = "relatoriogeral";
@@ -73,5 +85,6 @@
 
         private Label label1;
         private DataGridView dataGridView1;
+        private Button button1;
     }
 }

@@ -224,6 +224,7 @@
             txtsenha.Name = "txtsenha";
             txtsenha.Size = new Size(102, 27);
             txtsenha.TabIndex = 20;
+            txtsenha.TextChanged += txtsenha_TextChanged;
             // 
             // label8
             // 

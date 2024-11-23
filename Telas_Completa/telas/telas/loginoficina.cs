@@ -62,7 +62,9 @@ namespace telas
             cadastromecanico mecanico = new cadastromecanico();
             mecanicocontrole mecanicocontrole = new mecanicocontrole();
 
-            try
+
+           
+                try
             {
                 if (string.IsNullOrEmpty(nomeoficina.Text))
                 {
@@ -151,7 +153,7 @@ namespace telas
                 nomeoficina.Text = dt.Rows[0][0].ToString();
                 nomemecanico.Text = dt.Rows[0][1].ToString();
                 emailmecanico.Text = dt.Rows[0][2].ToString();
-                senhamecanico.Text = dt.Rows[0][3].ToString();
+                //senhamecanico.Text = dt.Rows[0][3].ToString();
                 codmecanico.Text = dt.Rows[0][4].ToString();
                 codcliente = codcliente;//Convert.ToInt32(textBox1.Text)
             }
